@@ -39,19 +39,30 @@ try {
 //   form.classList.remove("form-error");
 // });
 
+userPhoneInput.addEventListener('input', () => {
+  userPhoneInput.setCustomValidity('');
+  userPhoneInput.checkValidity();
+});
+
 userPhoneInput.addEventListener('invalid', () => {
   // const phoneValue = userPhoneInput.value;
 
-  if (userPhoneInput.validity.valueMissing) {
-    userPhoneInput.setCustomValidity('Обязательное поле');
-  }
-  // else if (userPhoneInput.validity.typeMismatch) {
-  //   userPhoneInput.setCustomValidity('Данные должны быть в числовом формате');
+  // if (userPhoneInput.validity.valueMissing) {
+  //   userPhoneInput.setCustomValidity('Обязательное поле');
   // }
-  else {
-    userPhoneInput.setCustomValidity('');
-  }
+  // // else if (userPhoneInput.validity.typeMismatch) {
+  // //   userPhoneInput.setCustomValidity('Данные должны быть в числовом формате');
+  // // }
+  // else {
+  //   userPhoneInput.setCustomValidity('');
+  // }
   // userPhoneInput.reportValidity();
+
+  if(userPhoneInput.value === '') {
+    userPhoneInput.setCustomValidity('Введите номер телефона');
+  } else {
+    userPhoneInput.setCustomValidity('Enter phone number in this format: 123-456-7890');
+  }
 });
 
 form.addEventListener("submit", function (evt) {
