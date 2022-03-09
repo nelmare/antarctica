@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,65 +16,58 @@
     <div class="wrapper">
       <header class="page-header">
         <div class="page-header__container container">
-        <nav class="main-nav main-nav--nojs main-nav--closed">
-          <a class="main-nav__logo" href="#" aria-label="Логотип Круизы в Антарктику">
-<!--            <img src="img/sprite/logo.svg" width="70" height="38" alt="Логотип Круизов в Антарктику">-->
-            <svg width="70" height="38" aria-hidden="true" focusable="false" role="img">
-              <use xlink:href="img/sprite_auto.svg#logo"></use>
-            </svg>
-          </a>
-          <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
-            <span class="visually-hidden">Открыть меню / Закрыть меню</span>
-          </button>
-          <ul class="main-nav__list site-list">
-            <li>
-              <a href="#advantages">Преимущества</a>
-            </li>
-            <li>
-              <a href="#cruises">Направления</a>
-            </li>
-            <li>
-              <a href="#cruises">Ближайшие круизы</a>
-            </li>
-            <li>
-              <a href="#contacts">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="main-nav is-nojs is-closed">
+            <a class="main-nav__logo" aria-label="Логотип Круизы в Антарктику">
+              <svg width="70" height="38" focusable="false" role="img">
+                <use xlink:href="img/sprite_auto.svg#logo"></use>
+              </svg>
+            </a>
+            <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
+              <span class="visually-hidden">Открыть меню / Закрыть меню</span>
+            </button>
+            <ul class="main-nav__list site-list">
+              <li>
+                <a href="#advantages">Преимущества</a>
+              </li>
+              <li>
+                <a href="#cruises">Направления</a>
+              </li>
+              <li>
+                <a href="#cruises">Ближайшие круизы</a>
+              </li>
+              <li>
+                <a href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <section class="intro">
           <div class="container">
-            <!--          <div class="intro__wrapper">-->
             <h1>Круизы в&nbsp;Антарктику </h1>
             <p>Волшебный мир айсбергов и пингвинов</p>
-            <!--          </div>-->
           </div>
         </section>
       </header>
       <main class="page-main">
-
         <section class="about">
           <div class="about__container container">
             <div>
-            <h2>Путешествие на&nbsp;край Земли</h2>
-            <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный
-              лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов,
-              китов, морских котиков и многое другое.</p>
+              <h2>Путешествие на&nbsp;край Земли</h2>
+              <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный
+                лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов,
+                китов, морских котиков и многое другое.</p>
             </div>
-            <div>
-              <source type="image/webp" srcset="img/content/penguins-desktop@1x.webp 1x, img/content/penguins-desktop@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1179px)" srcset="img/content/penguins-tablet@1x.webp 1x,
-                  img/content/penguins-desktop@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/content/penguins-mobile@1x.webp 1x,
+            <div class="about__image-container">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/content/penguins-mobile@1x.webp 1x,
                   img/content/penguins-mobile@2x.webp 2x">
-              <img srcset="img/content/penguins-desktop@1x.jpg 1x, img/content/penguins-desktop@2x.jpg 2x,
-                            img/content/penguins-tablet@1x.jpg 1x, img/content/penguins-tablet@2x.jpg 2x,
-                            img/content/penguins-mobile@1x.jpg 1x,img/content/penguins-mobile@2x.jpg 2x"
-              sizes="(min-width:1180px) 560px, (min-width:1180px) 560px,
-                      (max-width: 1179px) 324px, (max-width: 1179px) 324px,
-                      (max-width: 767px) 290px, (max-width: 767px) 290px"
-                src="img/content/penguins-desktop@1x.jpg"
-                width="560" height="301" alt="Три пингвина стоят на льду" >
+                <source type="image/webp" media="(max-width: 1179px)" srcset="img/content/penguins-tablet@1x.webp 1x,
+                  img/content/penguins-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/penguins-desktop@1x.webp 1x, img/content/penguins-desktop@2x.webp 2x">
+                <!-- 1х: 560px; 2x: 1120px -->
+                <img src="img/content/penguins-desktop@1x.jpg" srcset="img/content/penguins-desktop@2x.jpg 2x"
+                  width="560" height="301" alt="Три пингвина стоят на льду">
+              </picture>
             </div>
           </div>
         </section>
@@ -82,26 +75,22 @@
           <div class="container">
             <h2>Преимущества</h2>
             <ul>
-              <li>
-                <img srcset="img/svg/icon-ship.svg 27w, img/svg/icon-ship.svg 21w" src="img/svg/icon-ship.svg"
-                  sizes="(max-width: 1179px) 21px, 27px" >
-<!--                width="27" height="32">-->
+              <li class="advantages__item advantages__item--ship">
+                <img src="img/svg/icon-ship.svg" aria-hidden="true" width="27" height="32" alt="Изображение корабля">
                 <h3>Небольшой круизный&nbsp;лайнер</h3>
                 <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст
                   возможность насладиться видами и&nbsp;природой.</p>
               </li>
-              <li>
-                <img srcset="img/svg/icon-waves.svg 38w, img/svg/icon-waves.svg 33w" src="img/svg/icon-waves.svg"
-                  sizes="(max-width: 1179px) 33px, 38px">
-<!--                  width="38" height="21">-->
+              <li class="advantages__item advantages__item--waves">
+                <img src="img/svg/icon-waves.svg" aria-hidden="true" role="img" width="38" height="21" alt="Изображение
+                волн">
                 <h3>Система все&nbsp;включено</h3>
                 <p>Все наши круизы работают по&nbsp;системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар
                   доступны для&nbsp;вас 24&nbsp;часа.</p>
               </li>
-              <li>
-                <img srcset="img/svg/icon-boat.svg 42w, img/svg/icon-boat.svg 38w" src="img/svg/icon-boat.svg"
-                  sizes="(max-width: 1179px) 38px, 42px">
-<!--                  width="42" height="15">-->
+              <li class="advantages__item advantages__item--boat">
+                <img src="img/svg/icon-boat.svg" aria-hidden="true" role="img" width="42" height="15" alt="Изображение
+                лодки">
                 <h3>Экскурсионные туры на Zodiac</h3>
                 <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac&nbsp;в
                   сопровождении<br> опытных экскурсоводов.</p>
@@ -114,40 +103,54 @@
             <h2 id="tours">Ближайшие круизы</h2>
             <ul>
               <li tabindex="0">
-<!--                <div>-->
-<!--                  <source type="image/webp" media="(min-width: 1290px)" srcset="img/greece-desktop@1x.webp 1x, img/greece-desktop@2x.webp 2x">-->
-<!--                  <source type="image/webp" srcset="img/greece-mobile@1x.webp 1x, img/greece-mobile@2x.webp 2x">-->
-                  <img src="img/content/astoria-back-tablet@1x.jpg" srcset="img/content/astoria-back-tablet@2x.jpg 2x"
-                    alt="Возвышенности Антарктиды, покрытые снегом, и лед на воде" width="260" height="386">
-<!--                </div>-->
+                <div class="cruises__image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/astoria-back-mobile@1x.webp 1x,
+                      img/content/astoria-back-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1179px)" srcset="img/content/astoria-back-tablet@1x.webp 1x,
+                      img/content/astoria-back-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/astoria-back-desktop@1x.webp 1x,
+                      img/content/astoria-back-desktop@2x.webp 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <img src="img/content/astoria-back-tablet@1x.jpg" srcset="img/content/astoria-back-tablet@2x.jpg 2x"
+                      alt="Возвышенности Антарктиды, покрытые снегом, и лед на воде" width="309" height="386">
+                  </picture>
+                </div>
                 <article class="no-scrollbar">
                   <h4>Круиз “Астория”</h4>
                   <dl>
                     <dt>Маршрут</dt>
                     <dd>Аргентина - Фолклендские острова - Антарктида</dd>
                   </dl>
-                    <dl>
+                  <dl>
                     <dt>Порт отправления</dt>
                     <dd>Ушуайя</dd>
-                    </dl>
-                      <dl>
+                  </dl>
+                  <dl>
                     <dt>Продолжительность</dt>
                     <dd>11 дней</dd>
-                      </dl>
-                        <dl>
+                  </dl>
+                  <dl>
                     <dt>Цена</dt>
                     <dd>от 11500 $</dd>
-                        </dl>
+                  </dl>
                   <a class="btn" href="#">Забронировать</a>
                 </article>
               </li>
               <li tabindex="0">
-<!--                <div>-->
-<!--                  <source type="image/webp" media="(min-width: 1290px)" srcset="img/greece-desktop@1x.webp 1x, img/greece-desktop@2x.webp 2x">-->
-<!--                  <source type="image/webp" srcset="img/greece-mobile@1x.webp 1x, img/greece-mobile@2x.webp 2x">-->
-                <img src="img/content/astoria-back-tablet@1x.jpg" srcset="img/content/astoria-back-tablet@2x.jpg 2x"
-                  alt="Возвышенности Антарктиды, покрытые снегом, и лед на воде" width="260" height="386">
-<!--                </div>-->
+                <div class="cruises__image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/astoria-back-mobile@1x.webp 1x,
+                    img/content/astoria-back-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1179px)" srcset="img/content/astoria-back-tablet@1x.webp 1x,
+                    img/content/astoria-back-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/astoria-back-desktop@1x.webp 1x,
+                    img/content/astoria-back-desktop@2x.webp 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <img src="img/content/astoria-back-tablet@1x.jpg" srcset="img/content/astoria-back-tablet@2x.jpg 2x"
+                  alt="Возвышенности Антарктиды, покрытые снегом, и лед на воде" width="309" height="386">
+                  </picture>
+                </div>
                 <article class="no-scrollbar">
                   <h4>Круиз “Элайн”</h4>
                   <dl>
@@ -158,11 +161,11 @@
                     <dt>Порт отправления</dt>
                     <dd>Буэнос-Айрес</dd>
                   </dl>
-                    <dl>
+                  <dl>
                     <dt>Продолжительность</dt>
                     <dd>20 дней</dd>
                   </dl>
-                      <dl>
+                  <dl>
                     <dt>Цена</dt>
                     <dd>от 14500 $</dd>
                   </dl>
@@ -170,10 +173,19 @@
                 </article>
               </li>
               <li tabindex="0">
-<!--                <source type="image/webp" media="(min-width: 1290px)" srcset="img/greece-desktop@1x.webp 1x, img/greece-desktop@2x.webp 2x">-->
-<!--                <source type="image/webp" srcset="img/greece-mobile@1x.webp 1x, img/greece-mobile@2x.webp 2x">-->
-                <img src="img/content/atlantis-back-tablet@1x.jpg" srcset="img/content/atlantis-back-tablet@2x.jpg 2x"
-                  alt="Плавающие льдины Антарктиды" width="260" height="386">
+                <div class="cruises__image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/atlantis-back-mobile@1x.webp 1x,
+                    img/content/atlantis-back-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1179px)" srcset="img/content/atlantis-back-tablet@1x.webp 1x,
+                    img/content/atlantis-back-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/atlantis-back-desktop@1x.webp 1x,
+                    img/content/atlantis-back-desktop@2x.webp 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <img src="img/content/atlantis-back-tablet@1x.jpg" srcset="img/content/atlantis-back-tablet@2x.jpg 2x"
+                  alt="Плавающие льдины Антарктиды" width="309" height="386">
+                  </picture>
+                </div>
                 <article class="no-scrollbar">
                   <h4>Круиз “Атлантис”</h4>
                   <dl>
@@ -196,12 +208,19 @@
                 </article>
               </li>
               <li tabindex="0">
-<!--                <div>-->
-<!--                  <source type="image/webp" media="(min-width: 1290px)" srcset="img/greece-desktop@1x.webp 1x, img/greece-desktop@2x.webp 2x">-->
-<!--                  <source type="image/webp" srcset="img/greece-mobile@1x.webp 1x, img/greece-mobile@2x.webp 2x">-->
-                <img src="img/content/odysseus-back-tablet@1x.jpg" srcset="img/content/odysseus-back-tablet@2x.jpg 2x"
-                  alt="Возвышенности, лед и вода на фоне голубого неба" width="260" height="386">
-<!--                </div>-->
+                <div class="cruises__image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/odysseus-back-mobile@1x.webp 1x,
+                    img/content/odysseus-back-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1179px)" srcset="img/content/odysseus-back-tablet@1x.webp 1x,
+                    img/content/odysseus-back-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/odysseus-back-desktop@1x.webp 1x,
+                    img/content/odysseus-back-desktop@2x.webp 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <img src="img/content/odysseus-back-tablet@1x.jpg" srcset="img/content/odysseus-back-tablet@2x.jpg 2x"
+                  alt="Возвышенности, лед и вода на фоне голубого неба" width="309" height="386">
+                  </picture>
+                </div>
                 <article class="no-scrollbar">
                   <h4>Круиз “Одиссей”</h4>
                   <dl>
@@ -224,12 +243,19 @@
                 </article>
               </li>
               <li tabindex="0">
-<!--                <div>-->
-<!--                  <source type="image/webp" media="(min-width: 1290px)" srcset="img/greece-desktop@1x.webp 1x, img/greece-desktop@2x.webp 2x">-->
-<!--                  <source type="image/webp" srcset="img/greece-mobile@1x.webp 1x, img/greece-mobile@2x.webp 2x">-->
-                <img src="img/content/olympia-back-tablet@1x.jpg" srcset="img/content/olympia-back-tablet@2x.jpg 2x"
-                  alt="Пингвины, окруженные льдами Антарктики" width="260" height="386">
-<!--                </div>-->
+                <div class="cruises__image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/olympia-back-mobile@1x.webp 1x,
+                    img/content/olympia-back-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1179px)" srcset="img/content/olympia-back-tablet@1x.webp 1x,
+                    img/content/olympia-back-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/olympia-back-desktop@1x.webp 1x,
+                    img/content/olympia-back-desktop@2x.webp 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <img src="img/content/olympia-back-tablet@1x.jpg" srcset="img/content/olympia-back-tablet@2x.jpg 2x"
+                  alt="Пингвины, окруженные льдами Антарктики" width="309" height="386">
+                  </picture>
+                </div>
                 <article class="no-scrollbar">
                   <h4>Круиз “Олимпия”</h4>
                   <dl>
@@ -252,12 +278,19 @@
                 </article>
               </li>
               <li tabindex="0">
-<!--                <div>-->
-<!--                  <source type="image/webp" media="(min-width: 1290px)" srcset="img/greece-desktop@1x.webp 1x, img/greece-desktop@2x.webp 2x">-->
-<!--                  <source type="image/webp" srcset="img/greece-mobile@1x.webp 1x, img/greece-mobile@2x.webp 2x">-->
-                <img src="img/content/aurora-back-tablet@1x.jpg" srcset="img/content/aurora-back-tablet@2x.jpg 2x"
-                  alt="Берег Антарктиды, покрытый снегом и льдом" width="260" height="386">
-<!--                </div>-->
+                <div class="cruises__image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/aurora-back-mobile@1x.webp 1x,
+                    img/content/aurora-back-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1179px)" srcset="img/content/aurora-back-tablet@1x.webp 1x,
+                    img/content/aurora-back-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/aurora-back-desktop@1x.webp 1x,
+                    img/content/aurora-back-desktop@2x.webp 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <img src="img/content/aurora-back-tablet@1x.jpg" srcset="img/content/aurora-back-tablet@2x.jpg 2x"
+                  alt="Берег Антарктиды, покрытый снегом и льдом" width="309" height="386">
+                  </picture>
+                </div>
                 <article class="no-scrollbar">
                   <h4>Круиз “Аврора”</h4>
                   <dl>
@@ -280,12 +313,19 @@
                 </article>
               </li>
               <li tabindex="0">
-<!--                <div>-->
-<!--                <source type="image/webp" media="(min-width: 1290px)" srcset="img/greece-desktop@1x.webp 1x, img/greece-desktop@2x.webp 2x">-->
-<!--                <source type="image/webp" srcset="img/greece-mobile@1x.webp 1x, img/greece-mobile@2x.webp 2x">-->
-                <img src="img/content/leonor-back-tablet@1x.jpg" srcset="img/content/leonor-back-tablet@2x.jpg 2x"
-                  alt="Лодка плывет по холодным водам Антарктиды" width="260" height="386">
-<!--                </div>-->
+                <div class="cruises__image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/leonor-back-mobile@1x.webp 1x,
+                    img/content/leonor-back-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1179px)" srcset="img/content/leonor-back-tablet@1x.webp 1x,
+                    img/content/leonor-back-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/leonor-back-desktop@1x.webp 1x,
+                    img/content/leonor-back-desktop@2x.webp 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <img src="img/content/leonor-back-tablet@1x.jpg" srcset="img/content/leonor-back-tablet@2x.jpg 2x"
+                  alt="Лодка плывет по холодным водам Антарктиды" width="309" height="386">
+                  </picture>
+                </div>
                 <article>
                   <h4>Круиз “Леонор”</h4>
                   <dl>
@@ -307,13 +347,20 @@
                   <a class="btn" href="#">Забронировать</a>
                 </article>
               </li>
-              <li tabindex="0">
-<!--                <div>-->
-<!--                <source type="image/webp" media="(min-width: 1290px)" srcset="img/greece-desktop@1x.webp 1x, img/greece-desktop@2x.webp 2x">-->
-<!--                <source type="image/webp" srcset="img/greece-mobile@1x.webp 1x, img/greece-mobile@2x.webp 2x">-->
-                <img src="img/content/minion-back-tablet@1x.jpg" srcset="img/content/minion-back-tablet@2x.jpg 2x"
-                  alt="Вода и возвышенности Антарктиды, люди идут к берегу" width="260" height="386">
-<!--                </div>-->
+              <li>
+                <div class="cruises__image-wrapper" tabindex="0">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/minion-back-mobile@1x.webp 1x,
+                    img/content/minion-back-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1179px)" srcset="img/content/minion-back-tablet@1x.webp 1x,
+                    img/content/minion-back-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/minion-back-desktop@1x.webp 1x,
+                    img/content/minion-back-desktop@2x.webp 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <img src="img/content/minion-back-tablet@1x.jpg" srcset="img/content/minion-back-tablet@2x.jpg 2x"
+                  alt="Вода и возвышенности Антарктиды, люди идут к берегу" width="309" height="386">
+                  </picture>
+                </div>
                 <article>
                   <h4>Круиз “Минион - 1”</h4>
                   <dl>
@@ -338,11 +385,10 @@
             </ul>
           </div>
         </section>
-
         <section class="booking">
           <div class="booking__container container">
             <article>
-            <h2>Раннее бронирование</h2>
+              <h2>Раннее бронирование</h2>
               <p>Забронируйте тур за&nbsp;<nobr>3-6</nobr>&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте&nbsp;до&nbsp;50%</p>
             </article>
             <form class="booking__form form" action="https://echo.htmlacademy.ru" method="post">
@@ -353,7 +399,7 @@
               </div>
               <div>
                 <input type="tel" name="phone" id="booking-phone" placeholder="Телефон"
-                  maxlength="11" minlength="11" required pattern="\+?[\(\)\d\s\-]{7,}">
+                  maxlength="12" minlength="12" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 <label class="visually-hidden" for="booking-phone">Телефон</label>
               </div>
               <div>
@@ -376,31 +422,33 @@
           <h2 class="visually-hidden">Контакты турагента</h2>
           <div class="contacts__container container">
             <div class="contacts__map-wrapper">
-<!--              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586862!2d30.320853351719368!3d59.93871648178723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630080183634!5m2!1sru!2sru"-->
-  <!--              width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0"></iframe>-->
-  <!--              <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">-->
-  <!--              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">-->
-  <!--              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">-->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586862!2d30.320853351719368!3d59.93871648178723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630080183634!5m2!1sru!2sru"
+                width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0"></iframe>
+              <picture>
+                <source type="image/webp" media="(min-width: 767px)" srcset="img/content/map-mobile@1x.webp 1x,
+                img/content/map-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1179px)" srcset="img/content/map-tablet@1x.webp 1x,
+                img/content/map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/map-desktop@1x.webp 1x,
+              img/content/map-desktop@2x.webp 2x">
+                <!-- 1х: 560px; 2x: 1120px -->
                 <img src="img/content/map-desktop@1x.png" srcset="img/content/map-desktop@2x.png 2x"
                   alt="Офис компании расположен по адресу: Санкт-Петербург, ул.БольшаяКонюшенная,д.19/8"
                   width="560" height="306">
+              </picture>
             </div>
             <div>
               <p>У&nbsp;вас&nbsp;ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам&nbsp;все расскажем.</p>
               <address>
-  <!--              <p>-->
-                  <a href="#">г. Санкт-Петербург, ул.&nbsp;Большая&nbsp;Конюшенная,&nbsp;19/8</a>
-  <!--              </p>-->
-  <!--              <p>-->
-                  <a href="tel:+88002000000">8-800-200-00-00</a>
-  <!--              </p>-->
+                <a href="#">г. Санкт-Петербург, ул.&nbsp;Большая&nbsp;Конюшенная,&nbsp;19/8</a>
+                <a href="tel:+88002000000">8-800-200-00-00</a>
               </address>
             </div>
           </div>
         </section>
       </main>
-
-      <footer class="page-footer container">
+      <footer class="page-footer">
+        <div class="page-footer__container container">
           <div class="page-footer__logo">
             <a aria-label="Главная страница Круизов в Антарктику">
               <svg aria-hidden="true" focusable="false" role="img" width="70" height="38">
@@ -443,58 +491,8 @@
               </li>
             </ul>
           </section>
+        </div>
       </footer>
-
-<!--    <div class="modal modal&#45;&#45;preload" data-modal="feedback">-->
-<!--      <div class="modal__wrapper">-->
-<!--        <div class="modal__overlay" data-close-modal></div>-->
-<!--        <div class="modal__content">-->
-<!--          <p class="modal__description">Обычная модалка</p>-->
-<!--          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>-->
-<!--            <svg width="15" height="15">-->
-<!--              <use xlink:href="img/sprite_auto.svg#icon-close"></use>-->
-<!--            </svg>-->
-<!--          </button>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-
-<!--    <div class="modal modal&#45;&#45;preload modal&#45;&#45;fit-content modal&#45;&#45;no-scale" data-modal="success">-->
-<!--      <div class="modal__wrapper">-->
-<!--        <div class="modal__overlay" data-close-modal></div>-->
-<!--        <div class="modal__content">-->
-<!--          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>-->
-<!--          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>-->
-<!--            <svg width="15" height="15">-->
-<!--              <use xlink:href="img/sprite_auto.svg#icon-close"></use>-->
-<!--            </svg>-->
-<!--          </button>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-
-<!--      <div class="modal modal&#45;&#45;buy-tour modal&#45;&#45;close">-->
-<!--        <button class="modal__close" type="button" aria-label="Закрыть"></button>-->
-<!--        <div class="modal__content">-->
-<!--          <div class="modal__wrapper">-->
-<!--            <h3 class="modal__title block-title">Купить тур</h3>-->
-<!--            <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post">-->
-<!--              <div class="modal__group modal__group&#45;&#45;phone form__group form__group&#45;&#45;phone">-->
-<!--                <input class="modal__input modal__input&#45;&#45;phone form__input form__input&#45;&#45;phone" type="tel" name="phone-number" id="phone-number" placeholder="Введите 10 цифр номера">-->
-<!--                <label class="modal__label visually-hidden" for="phone-number">Введите номер телефона (последние 10 цифр)</label>-->
-<!--              </div>-->
-<!--              <div class="modal__group modal__group&#45;&#45;email form__group">-->
-<!--                <input class="modal__input modal__input&#45;&#45;email form__input form__input&#45;&#45;email" type="email" name="e-mail" id="e-mail" placeholder="E-mail">-->
-<!--                <label class="modal__label visually-hidden" for="e-mail">Введите Ваш e-mail'</label>-->
-<!--              </div>-->
-<!--              <button class="modal__form-submit button" type="submit">Отправить</button>-->
-<!--            </form>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="modal__form-message">-->
-<!--          <p class="modal__message">Форма успешно отправлена, спасибо! :)</p>-->
-<!--        </div>-->
-<!--      </div>-->
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

@@ -2,7 +2,6 @@
   font-weight: 500;
   line-height: 20px;
   color: $color-default-alice-blue;
-  //min-height: 650px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -13,7 +12,7 @@
   background-position: center;
   background-size: cover;
 
-  @media (min-width: 1180px ) {
+  @media (min-width: 1180px) {
     background-image: url("../img/content/intro-back-desktop@1x.jpg");
 
     @include retina {
@@ -45,17 +44,3 @@
     padding: 0;
   }
 }
-
-//@media (min-width: $tablet-width) {
-//  .page-header {
-//    padding-left: 21px;
-//  }
-//}
-//
-//@media (min-width: $desktop-width) {
-//  .page-header {
-//    min-height: 100px;
-//    padding-right: 60px;
-//    padding-left: 60px;
-//  }
-//}

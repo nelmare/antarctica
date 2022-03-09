@@ -6,11 +6,11 @@
   background-position: center;
   background-size: cover;
 
-  @media (min-width: 1180px ) {
+  @media (min-width: 1180px) {
     background-image: url("../img/content/advantages-back-desktop@1x.png");
 
     @include retina {
-      background-image: url("../img/content/advantages-back-desktop@2x.png");
+      background-image: url("../img/content/advantages-back-desktop@2x.jpg");
     }
   }
 
@@ -30,7 +30,7 @@
     background-image: url("../img/content/advantages-back-mobile@1x.png");
 
     @include retina {
-      background-image: url("../img/content/advantages-back-mobile@2x.png");
+      background-image: url("../img/content/advantages-back-mobile@2x.jpg");
     }
   }
 }
@@ -100,6 +100,27 @@
   }
 }
 
+.advantages__item--ship img {
+  @include vp-1179 {
+    width: 21px;
+    height: 26px;
+  }
+}
+
+.advantages__item--waves img {
+  @include vp-1179 {
+    width: 33px;
+    height: 19px;
+  }
+}
+
+.advantages__item--boat img {
+  @include vp-1179 {
+    width: 38px;
+    height: 13px;
+  }
+}
+
 .advantages h3 {
   margin: 0;
   font-weight: 500;
@@ -124,6 +145,6 @@
   padding-right: 11px;
 
   @include vp-1179 {
-    padding-right:4px;
+    padding-right: 4px;
   }
 }

@@ -14,24 +14,24 @@
 }
 
 .cruises h2 {
-    margin: 0;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 42px;
-    margin-bottom: 49px;
-    text-align: center;
+  margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 49px;
+  text-align: center;
 
-    @include vp-1179 {
-      font-size: 26px;
-      line-height: 39px;
-      margin-bottom: 50px;
-    }
+  @include vp-1179 {
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 50px;
+  }
 
-    @include vp-767 {
-      font-size: 24px;
-      line-height: 36px;
-      margin-bottom: 31px;
-    }
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 31px;
+  }
 }
 
 .cruises ul {
@@ -49,11 +49,11 @@
   }
 
   @include vp-767 {
-    grid-template-columns:  repeat(2, 270px);
+    grid-template-columns: repeat(2, 270px);
   }
 
   @include vp-599 {
-    grid-template-columns:  270px;
+    grid-template-columns: 270px;
   }
 }
 
@@ -63,6 +63,19 @@
   position: relative;
   font-size: 14px;
   line-height: 19px;
+
+  @include vp-1179 {
+    width: 309px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+  }
+}
+
+.cruises__image-wrapper {
+  width: 260px;
+  height: 386px;
 
   @include vp-1179 {
     width: 309px;
@@ -114,14 +127,7 @@
   display: none;
 }
 
-//.cruises li:hover img,
-////.cruises li:active img,
-//.cruises li:focus-within img {
-//  display: none;
-//}
-
 .cruises li:hover article,
-//.cruises li:active article,
 .cruises li:focus-within article {
   background-color: $color-default-tangaroa;
   overflow-y: scroll;
@@ -141,7 +147,7 @@
 }
 
 .cruises li:hover h4,
-  .cruises li:focus-within h4 {
+.cruises li:focus-within h4 {
   margin-bottom: 15px;
 }
 
@@ -162,7 +168,6 @@
 }
 
 .cruises li:hover a,
-//.cruises li:active a,
 .cruises li:focus-within a {
   display: block;
   margin: 0;

@@ -615,13 +615,6 @@ button,
   display: none;
 }
 
-.no-transition {
-  /* stylelint-disable-next-line */
-  -webkit-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
-}
-
 .container {
   width: 100%;
   max-width: 1366px;
@@ -718,7 +711,7 @@ button,
   flex-wrap: wrap;
 }
 
-.main-nav--nojs {
+.is-nojs {
   background-color: rgba(0, 43, 102, 0.5);
   width: 100%;
   position: relative;
@@ -728,8 +721,8 @@ button,
   min-height: auto;
 }
 
-.main-nav--open svg,
-.main-nav--nojs svg {
+.is-open svg,
+.is-nojs svg {
   fill: #011c40;
 }
 
@@ -780,6 +773,11 @@ button,
 .page-footer {
   padding-top: 51px;
   padding-bottom: 50px;
+  background-color: #011c40;
+  color: #f9fbfd;
+}
+
+.page-footer__container {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -790,8 +788,6 @@ button,
   -webkit-column-gap: 25px;
   -moz-column-gap: 25px;
   column-gap: 25px;
-  background-color: #011c40;
-  color: #f9fbfd;
 }
 
 .page-footer__logo {
@@ -902,6 +898,7 @@ button,
   -webkit-column-gap: 88px;
   -moz-column-gap: 88px;
   column-gap: 88px;
+  justify-items: center;
 }
 
 .about h2 {
@@ -918,11 +915,18 @@ button,
   padding: 0;
 }
 
-.about img {
+.about .about__image-container {
   width: 560px;
   height: 301px;
-  -o-object-fit: contain;
-  object-fit: contain;
+}
+
+.about img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
   background-color: #d6e4f3;
 }
 
@@ -1024,6 +1028,11 @@ button,
   position: relative;
   font-size: 14px;
   line-height: 19px;
+}
+
+.cruises__image-wrapper {
+  width: 260px;
+  height: 386px;
 }
 
 .cruises img {
@@ -1149,8 +1158,8 @@ button,
   color: #f9fbfd;
   padding: 43px 50px 40px 50px;
   width: 403px;
-  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
 }
 
 .form p {
@@ -1290,7 +1299,7 @@ button,
   height: 306px;
 }
 
-.contacts__container .contacts__map-wrapper:after {
+.contacts__container .contacts__map-wrapper::after {
   content: "";
   position: absolute;
   bottom: 67px;
@@ -1343,7 +1352,7 @@ button,
   font-style: normal;
 }
 
-.contacts a:before {
+.contacts a::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1362,7 +1371,7 @@ button,
   margin-bottom: 0;
 }
 
-.contacts a[href="tel:+88002000000"]:before {
+.contacts a[href="tel:+88002000000"]::before {
   height: 18px;
   background-image: url("../img/svg/icon-phone.svg");
 }
@@ -1401,11 +1410,17 @@ button,
   }
 
   .advantages {
-    background-image: url("../img/content/advantages-back-desktop@2x.png");
+    background-image: url("../img/content/advantages-back-desktop@2x.jpg");
   }
 
   .booking {
-    background-image: url("../img/content/form-back-desktop@2x.png");
+    background-image: url("../img/content/form-back-desktop@2x.jpg");
+  }
+}
+
+@media (max-width: 1365px) {
+  .about h2 {
+    padding-top: 0;
   }
 }
 
@@ -1433,7 +1448,7 @@ button,
     height: 20px;
   }
 
-  .main-nav--open .main-nav__logo {
+  .is-open .main-nav__logo {
     display: block;
   }
 
@@ -1463,13 +1478,16 @@ button,
   }
 
   .page-footer {
+    padding-top: 44px;
+    padding-bottom: 45px;
+  }
+
+  .page-footer__container {
     -ms-grid-columns: 38px auto 106px;
     grid-template-columns: 38px auto 106px;
     -webkit-column-gap: 15px;
     -moz-column-gap: 15px;
     column-gap: 15px;
-    padding-top: 44px;
-    padding-bottom: 45px;
   }
 
   .page-footer__logo {
@@ -1506,15 +1524,14 @@ button,
   }
 
   .about__container {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 47.5% 48%;
+    grid-template-columns: 47.5% 48%;
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
   }
 
   .about h2 {
-    padding-top: 0;
     padding-right: 25px;
     margin-top: -9px;
     font-size: 26px;
@@ -1522,9 +1539,12 @@ button,
     margin-bottom: 15px;
   }
 
-  .about img {
-    width: 324px;
+  .about .about__image-container {
+    min-width: 324px;
+    width: 100%;
     height: 264px;
+    -ms-grid-column-align: center;
+    justify-self: center;
   }
 
   .advantages {
@@ -1547,6 +1567,21 @@ button,
   .advantages img {
     top: 29px;
     left: 20px;
+  }
+
+  .advantages__item--ship img {
+    width: 21px;
+    height: 26px;
+  }
+
+  .advantages__item--waves img {
+    width: 33px;
+    height: 19px;
+  }
+
+  .advantages__item--boat img {
+    width: 38px;
+    height: 13px;
   }
 
   .advantages h3 {
@@ -1574,6 +1609,10 @@ button,
   }
 
   .cruises li {
+    width: 309px;
+  }
+
+  .cruises__image-wrapper {
     width: 309px;
   }
 
@@ -1641,7 +1680,7 @@ button,
     grid-column-gap: 30px;
   }
 
-  .contacts__container .contacts__map-wrapper:after {
+  .contacts__container .contacts__map-wrapper::after {
     left: 34%;
     bottom: 94px;
   }
@@ -1663,7 +1702,7 @@ button,
     margin-top: -4px;
   }
 
-  .contacts a:before {
+  .contacts a::before {
     top: 5px;
     -webkit-transform: none;
     -ms-transform: none;
@@ -1737,7 +1776,7 @@ button,
     background-color: transparent;
   }
 
-  .main-nav--closed .main-nav__toggle::before {
+  .is-closed .main-nav__toggle::before {
     content: "";
     position: absolute;
     top: 24px;
@@ -1752,11 +1791,11 @@ button,
     box-shadow: 0 6px 0 0 #f9fbfd, 0 12px 0 0 #f9fbfd;
   }
 
-  .main-nav--closed .main-nav__list {
+  .is-closed .main-nav__list {
     display: none;
   }
 
-  .main-nav--open {
+  .is-open {
     background-color: rgba(0, 43, 102, 0.5);
     width: 100%;
     position: fixed;
@@ -1770,29 +1809,29 @@ button,
     min-height: 568px;
   }
 
-  .main-nav--open .main-nav__list,
-  .main-nav--nojs .main-nav__list {
+  .is-open .main-nav__list,
+  .is-nojs .main-nav__list {
     display: block;
     padding: 69px 0 69px 0;
   }
 
-  .main-nav--open .main-nav__list {
+  .is-open .main-nav__list {
     min-height: 568px;
   }
 
-  .main-nav--open .main-nav__logo,
-  .main-nav--nojs .main-nav__logo {
+  .is-open .main-nav__logo,
+  .is-nojs .main-nav__logo {
     left: 16%;
   }
 
-  .main-nav--open .main-nav__toggle {
+  .is-open .main-nav__toggle {
     background-size: 15px 15px;
     background-image: url("../img/svg/icon-close.svg");
     background-color: #f9fbfd;
     right: 0;
   }
 
-  .main-nav--nojs .main-nav__toggle {
+  .is-nojs .main-nav__toggle {
     display: none;
   }
 
@@ -1813,19 +1852,6 @@ button,
     position: relative;
   }
 
-  .site-list a::after {
-    content: "";
-    position: absolute;
-    background-size: 100% 100%;
-    background-image: url("../img/icon-arrow-right.svg");
-    background-position: center center;
-    display: block;
-    width: 8px;
-    height: 12px;
-    top: 23px;
-    right: 24px;
-  }
-
   .intro {
     padding: 176px 0 179px 0;
   }
@@ -1842,6 +1868,11 @@ button,
   }
 
   .page-footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .page-footer__container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     -ms-grid-rows: 1fr auto auto;
@@ -1849,8 +1880,6 @@ button,
     -webkit-column-gap: 0;
     -moz-column-gap: 0;
     column-gap: 0;
-    padding-top: 40px;
-    padding-bottom: 40px;
   }
 
   .page-footer__logo {
@@ -1930,9 +1959,12 @@ button,
     padding-bottom: 33px;
   }
 
-  .about img {
-    width: 290px;
-    height: 186px;
+  .about .about__image-container {
+    min-width: 290px;
+    min-height: 186px;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .advantages {
@@ -1984,6 +2016,10 @@ button,
   }
 
   .cruises li {
+    width: 270px;
+  }
+
+  .cruises__image-wrapper {
     width: 270px;
   }
 
@@ -2059,7 +2095,7 @@ button,
     align-items: center;
   }
 
-  .contacts__container .contacts__map-wrapper:after {
+  .contacts__container .contacts__map-wrapper::after {
     left: 39%;
     bottom: 70px;
   }
@@ -2084,7 +2120,7 @@ button,
     height: 316px;
   }
 
-  .contacts a:before {
+  .contacts a::before {
     top: 11%;
   }
 
@@ -2103,11 +2139,11 @@ button,
   }
 
   .advantages {
-    background-image: url("../img/content/advantages-back-mobile@2x.png");
+    background-image: url("../img/content/advantages-back-mobile@2x.jpg");
   }
 
   .booking {
-    background-image: url("../img/content/form-back-mobile@2x.png");
+    background-image: url("../img/content/form-back-mobile@2x.jpg");
   }
 }
 
