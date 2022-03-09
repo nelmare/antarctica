@@ -1,0 +1,32 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 23px;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 80px;
+    padding-bottom: 54px;
+  }
+
+  .page-footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-bottom: 74px;
+  }
+
+  .page-footer__container {
+    max-width: 1290px;
+  }
+}

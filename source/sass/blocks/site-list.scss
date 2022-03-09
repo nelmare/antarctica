@@ -1,0 +1,133 @@
+.site-list {
+  @include list-reset;
+  background-color: $main-color;
+}
+
+.site-list__item {
+  margin-bottom: 30px;
+}
+
+.site-list__link {
+  color: $dark-color2;
+  text-decoration: none;
+  display: block;
+  padding: 15px 35px 17px 16px;
+  background-color: $light-color;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: left;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-size: 100% 100%;
+    background-image: url("../img/icon-arrow-right.svg");
+    background-position: center center;
+    display: block;
+    width: 8px;
+    height: 12px;
+    top: 23px;
+    right: 24px;
+  }
+}
+
+.site-list__item--phone {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 320px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $mobile-tablet-width-only) {
+  .site-list {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .site-list__item {
+    margin-bottom: 0;
+  }
+
+  .site-list__link {
+    padding: 15px;
+    background-color: initial;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    color: $dark-color;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  // иконки телефона в формате png. Это связано с тем, что при добавлении svg этой иконки в спрайт она отражается
+  // полностью закрашенной, что не соответствует изображению на макете
+
+  .site-list__item--phone {
+    display: flex;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    padding-left: 46px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 25px;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      display: block;
+      z-index: 1;
+      background-image: url("../img/icon-phone.png");
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .site-list__link--phone {
+    text-decoration: underline;
+  }
+
+  .site-list__item--phone:hover::before {
+    content: "";
+    background-image: url("../img/icon-phone-hover.png");
+  }
+
+  .site-list__item--phone:hover .site-list__link--phone {
+    color: $accent-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item .site-list__link {
+    padding-right: 23px;
+    padding-left: 21px;
+  }
+
+  .site-list__item--phone {
+    margin-left: 21px;
+  }
+
+  .site-list__item--phone .site-list__link {
+    padding-right: 0;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .site-list__link:hover,
+  .site-list__link:active {
+    color: $accent-color;
+  }
+}
