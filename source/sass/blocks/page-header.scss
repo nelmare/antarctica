@@ -1,0 +1,61 @@
+.page-header {
+  font-weight: 500;
+  line-height: 20px;
+  color: $color-default-alice-blue;
+  //min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0;
+  padding-top: 35px;
+  background-color: $color-default-tangaroa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: 1180px ) {
+    background-image: url("../img/content/intro-back-desktop@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/content/intro-back-desktop@2x.jpg");
+    }
+  }
+
+  @include vp-1179 {
+    padding-top: 30px;
+    background-image: url("../img/content/intro-back-tablet@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/content/intro-back-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    padding-top: 0;
+    background-image: url("../img/content/intro-back-mobile@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/content/intro-back-mobile@2x.jpg");
+    }
+  }
+}
+
+.page-header__container {
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+//@media (min-width: $tablet-width) {
+//  .page-header {
+//    padding-left: 21px;
+//  }
+//}
+//
+//@media (min-width: $desktop-width) {
+//  .page-header {
+//    min-height: 100px;
+//    padding-right: 60px;
+//    padding-left: 60px;
+//  }
+//}

@@ -1,54 +1,107 @@
-.intro {
-  padding: 163px 0 278px 95px;
+.booking {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $color-pattens-blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: 1180px ) {
+    background-image: url("../img/content/form-back-desktop@1x.png");
+
+    @include retina {
+      background-image: url("../img/content/form-back-desktop@2x.png");
+    }
+  }
 
   @include vp-1179 {
-    padding: 193px 0 275px 0;
+    padding-top: 89px;
+    padding-bottom: 100px;
+    background-image: url("../img/content/form-back-tablet@1x.png");
+
+    @include retina {
+      background-image: url("../img/content/form-back-tablet@2x.png");
+    }
   }
 
   @include vp-767 {
-    padding: 176px 0 179px 0;
+    padding-top: 59px;
+    padding-bottom: 65px;
+    background-image: url("../img/content/form-back-mobile@1x.png");
+
+    @include retina {
+      background-image: url("../img/content/form-back-mobile@2x.png");
+    }
   }
 }
 
-.intro h1 {
+.booking__container {
+  display: grid;
+  grid-template-columns: 500px 403px;
+  grid-column-gap: 137px;
+  justify-content: center;
+  align-items: center;
+
+  @include vp-1179 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 0;
+    grid-row-gap: 53px;
+  }
+
+  @include vp-767 {
+    grid-row-gap: 35px;
+  }
+  //
+  //@include vp-599 {
+  //  grid-template-columns:  270px;
+  //}
+}
+
+.booking h2 {
   margin: 0;
-  text-align: left;
-  //width: 100%;
-  //max-width: 320px;
-  padding: 0 30px 0 0;
-  //color: $main-color;
-  //margin: 0 auto 20px auto;
   font-weight: 700;
-  font-size: 54px;
-  line-height: 66px;
-  margin-bottom: 13px;
+  font-size: 40px;
+  line-height: 60px;
+  margin-top: -7px;
+  margin-bottom: 8px;
 
   @include vp-1179 {
-    font-size: 50px;
-    line-height: 61px;
-    margin-bottom: 11px;
+    text-align: center;
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 3px;
+    margin-top: 0;
   }
 
   @include vp-767 {
-    font-size: 36px;
-    line-height: 45px;
+    //text-align: center;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 13px;
+    //margin-top: 0;
   }
 }
 
-.intro p {
+.booking p {
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 27px;
+  width: 75%;
 
   @include vp-1179 {
-    font-size: 18px;
-    line-height: 23px;
+    text-align: center;
+    margin: 0 auto;
+    width: 57%;
+    //font-size: 18px;
+    //line-height: 23px;
   }
 
   @include vp-767 {
     font-size: 16px;
     line-height: 22px;
-    width: 205px;
+    width: 96%;
   }
 }
+

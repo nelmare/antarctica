@@ -1,6 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-
+import './modules/burger.js';
+import './modules/form.js';
+import './modules/anchors-scroll.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

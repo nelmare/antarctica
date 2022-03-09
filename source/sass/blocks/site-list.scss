@@ -1,133 +1,116 @@
 .site-list {
-  @include list-reset;
-  background-color: $main-color;
-}
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  //background-color: $main-color;
 
-.site-list__item {
-  margin-bottom: 30px;
-}
-
-.site-list__link {
-  color: $dark-color2;
-  text-decoration: none;
-  display: block;
-  padding: 15px 35px 17px 16px;
-  background-color: $light-color;
-  font-weight: 600;
-  font-size: 20px;
-  text-align: left;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-size: 100% 100%;
-    background-image: url("../img/icon-arrow-right.svg");
-    background-position: center center;
-    display: block;
-    width: 8px;
-    height: 12px;
-    top: 23px;
-    right: 24px;
+  @include vp-767 {
+    background-color: $color-default-alice-blue;
+    width: 89%;
   }
 }
 
-.site-list__item--phone {
-  display: none;
-}
+.site-list li {
 
-@media (min-width: $tablet-width) {
-  .site-list {
-    width: 320px;
-    margin-left: auto;
-  }
-}
+  //&:last-child {
+  //  margin-right: -16px;
+  //}
 
-@media (min-width: $mobile-tablet-width-only) {
-  .site-list {
-    width: auto;
-    margin-left: 0;
-  }
-
-  .site-list__item {
+  @include vp-1179 {
     margin-bottom: 0;
   }
+}
 
-  .site-list__link {
-    padding: 15px;
-    background-color: initial;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: left;
-    color: $dark-color;
+.site-list a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 9px 0 9px 34px;
+  background-color: initial;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: $color-default-alice-blue;
 
-    &::after {
-      display: none;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.8;
   }
 
-  // иконки телефона в формате png. Это связано с тем, что при добавлении svg этой иконки в спрайт она отражается
-  // полностью закрашенной, что не соответствует изображению на макете
+  @include vp-1179 {
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0 0 0 24px;
+  }
 
-  .site-list__item--phone {
-    display: flex;
+  @include vp-767 {
+    color: $color-default-tangaroa;
+    text-decoration: none;
+    display: block;
+    padding: 15px 35px 13px 25px;
+    //background-color: $light-color;
+    font-weight: 500;
     font-size: 18px;
-    line-height: 32px;
-    font-weight: 400;
-    padding-left: 46px;
+    line-height: 22px;
+    text-align: left;
     position: relative;
 
-    &::before {
+    &::after {
       content: "";
       position: absolute;
-      top: 50%;
-      left: 25px;
-      transform: translateY(-50%);
-      width: 30px;
-      height: 30px;
-      display: block;
-      z-index: 1;
-      background-image: url("../img/icon-phone.png");
       background-size: 100% 100%;
-      background-position: center;
-      background-repeat: no-repeat;
+      background-image: url("../img/icon-arrow-right.svg");
+      background-position: center center;
+      display: block;
+      width: 8px;
+      height: 12px;
+      top: 23px;
+      right: 24px;
     }
   }
-
-  .site-list__link--phone {
-    text-decoration: underline;
-  }
-
-  .site-list__item--phone:hover::before {
-    content: "";
-    background-image: url("../img/icon-phone-hover.png");
-  }
-
-  .site-list__item--phone:hover .site-list__link--phone {
-    color: $accent-color;
-  }
 }
 
-@media (min-width: $desktop-width) {
-  .site-list__item .site-list__link {
-    padding-right: 23px;
-    padding-left: 21px;
-  }
+//@media (min-width: $tablet-width) {
+//  .site-list {
+//    width: 320px;
+//    margin-left: auto;
+//  }
+//}
 
-  .site-list__item--phone {
-    margin-left: 21px;
-  }
+//@media (min-width: $mobile-tablet-width-only) {
+//  .site-list {
+//    width: auto;
+//    margin-left: 0;
+//  }
+//
+//  //.site-list__item {
+//  //  margin-bottom: 0;
+//  //}
+//
+//  .site-list__link {
+//    padding: 15px;
+//    background-color: initial;
+//    font-weight: 500;
+//    font-size: 14px;
+//    line-height: 17px;
+//    text-align: left;
+//    color: $dark-color;
+//
+//    &::after {
+//      display: none;
+//    }
+//  }
+//
+//}
 
-  .site-list__item--phone .site-list__link {
-    padding-right: 0;
-    padding-left: 20px;
-    font-size: 18px;
-    line-height: 32px;
-  }
-
-  .site-list__link:hover,
-  .site-list__link:active {
-    color: $accent-color;
-  }
-}
+//@media (min-width: $desktop-width) {
+//  .site-list__item .site-list__link {
+//    padding-right: 23px;
+//    padding-left: 21px;
+//  }
+//
+//  .site-list__link:hover,
+//  .site-list__link:active {
+//    color: $accent-color;
+//  }
+//}

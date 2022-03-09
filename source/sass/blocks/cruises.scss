@@ -1,0 +1,170 @@
+.cruises {
+  padding-top: 110px;
+  padding-bottom: 120px;
+
+  @include vp-1179 {
+    padding-top: 89px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 56px;
+    padding-bottom: 65px;
+  }
+}
+
+.cruises h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 49px;
+    text-align: center;
+
+    @include vp-1179 {
+      font-size: 26px;
+      line-height: 39px;
+      margin-bottom: 50px;
+    }
+
+    @include vp-767 {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 31px;
+    }
+}
+
+.cruises ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  grid-template-rows: 386px;
+  grid-gap: 30px;
+  justify-content: center;
+
+  @include vp-1179 {
+    grid-template-columns: repeat(2, 309px);
+  }
+
+  @include vp-767 {
+    grid-template-columns:  repeat(2, 270px);
+  }
+
+  @include vp-599 {
+    grid-template-columns:  270px;
+  }
+}
+
+.cruises li {
+  width: 260px;
+  min-height: 386px;
+  position: relative;
+  font-size: 14px;
+  line-height: 19px;
+
+  @include vp-1179 {
+    width: 309px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+  }
+}
+
+.cruises img {
+  object-fit: cover;
+  height: 100%;
+
+  @include vp-1179 {
+    width: 309px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+  }
+}
+
+.cruises article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 28px 30px 23px 30px;
+  background-color: transparent;
+  color: $color-default-alice-blue;
+  z-index: 1;
+
+  @include vp-1179 {
+    padding: 28px 35px 27px 35px;
+  }
+
+  @include vp-767 {
+    padding: 28px 25px 18px 25px;
+  }
+}
+
+.cruises dl,
+.cruises a {
+  display: none;
+}
+
+//.cruises li:hover img,
+////.cruises li:active img,
+//.cruises li:focus-within img {
+//  display: none;
+//}
+
+.cruises li:hover article,
+//.cruises li:active article,
+.cruises li:focus-within article {
+  background-color: $color-default-tangaroa;
+  overflow-y: scroll;
+  padding: 28px 25px;
+  justify-content: flex-start;
+
+  @include vp-1179 {
+    padding: 28px 35px 27px 35px;
+  }
+}
+
+.cruises h4 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.cruises li:hover h4,
+  .cruises li:focus-within h4 {
+  margin-bottom: 15px;
+}
+
+.cruises li:hover dl,
+.cruises li:focus-within dl {
+  display: block;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.cruises dt {
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.cruises dd {
+  margin: 0;
+}
+
+.cruises li:hover a,
+//.cruises li:active a,
+.cruises li:focus-within a {
+  display: block;
+  margin: 0;
+  margin-top: 14px;
+}
