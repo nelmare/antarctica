@@ -15,8 +15,8 @@
     "start": "cross-env NODE_ENV=development gulp start",
     "webp": "gulp webp",
     "imagemin": "gulp imagemin",
-    "heroku-prebuild": "npm i -f",
-    "heroku-postbuild": "npm run build"
+    "heroku-prebuild": "",
+    "heroku-postbuild": ""
   },
   "editorconfig-cli": [
     "*.json",
