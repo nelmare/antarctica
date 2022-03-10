@@ -10,8 +10,10 @@ const userPhoneInputValidate = () => {
     userPhoneInput.addEventListener('invalid', () => {
       if (userPhoneInput.value === '') {
         userPhoneInput.setCustomValidity('Введите номер телефона');
-      } else {
-        userPhoneInput.setCustomValidity('Введите номер телефона в формате: 123-456-7890');
+      } else if (typeof userPhoneInput.value === 'string') {
+        userPhoneInput.setCustomValidity('Введите номер телефона цифрами');
+      }else {
+        adPriceInput.setCustomValidity('');
       }
     });
   }

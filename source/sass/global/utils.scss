@@ -32,16 +32,6 @@
   clip-path: inset(100%);
 }
 
-.scroll-lock-ios {
-  position: fixed;
-
-  overflow: hidden;
-}
-
-.scroll-lock {
-  overflow: hidden;
-}
-
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;

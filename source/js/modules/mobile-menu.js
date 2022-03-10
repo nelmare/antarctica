@@ -1,6 +1,6 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
-let navList = document.querySelector('.main-nav__list');
+export let navList = document.querySelector('.main-nav__list');
 let navLinks = navList.querySelectorAll('a');
 
 export const toggleMenu = () => {

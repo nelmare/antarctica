@@ -109,11 +109,13 @@
 }
 
 .is-nojs {
-  background-color: $color-prussian-blue;
-  width: 100%;
-  position: relative;
-  justify-content: flex-end;
-  min-height: auto;
+  @include vp-767 {
+    background-color: $color-prussian-blue;
+    width: 100%;
+    position: relative;
+    justify-content: flex-end;
+    min-height: auto;
+  }
 }
 
 .is-open .main-nav__list,
@@ -145,7 +147,9 @@
 
 .is-open svg,
 .is-nojs svg {
-  fill: $color-default-tangaroa;
+  @include vp-767 {
+    fill: $color-default-tangaroa;
+  }
 }
 
 .is-open .main-nav__toggle {

@@ -10,15 +10,20 @@
 }
 
 .site-list li {
+  margin: 9px 0 9px 34px;
+
   @include vp-1179 {
-    margin-bottom: 0;
+    margin: 0 0 0 24px;
+  }
+
+  @include vp-767 {
+    margin: 15px 35px 13px 25px;
   }
 }
 
 .site-list a {
   display: inline-block;
   vertical-align: middle;
-  padding: 9px 0 9px 34px;
   background-color: initial;
   font-weight: 500;
   line-height: 20px;
@@ -34,14 +39,12 @@
   @include vp-1179 {
     font-size: 14px;
     line-height: 17px;
-    padding: 0 0 0 24px;
   }
 
   @include vp-767 {
     color: $color-default-tangaroa;
     text-decoration: none;
     display: block;
-    padding: 15px 35px 13px 25px;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;

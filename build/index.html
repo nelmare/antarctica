@@ -399,7 +399,8 @@
               </div>
               <div>
                 <input type="tel" name="phone" id="booking-phone" placeholder="Телефон"
-                  maxlength="12" minlength="12" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                  maxlength="12" minlength="12" required>
+<!--                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"-->
                 <label class="visually-hidden" for="booking-phone">Телефон</label>
               </div>
               <div>
@@ -441,7 +442,7 @@
               <p>У&nbsp;вас&nbsp;ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам&nbsp;все расскажем.</p>
               <address>
                 <a href="#">г. Санкт-Петербург, ул.&nbsp;Большая&nbsp;Конюшенная,&nbsp;19/8</a>
-                <a href="tel:+88002000000">8-800-200-00-00</a>
+                <a class="contacts__phone-link" href="tel:+88002000000">8-800-200-00-00</a>
               </address>
             </div>
           </div>
@@ -449,48 +450,42 @@
       </main>
       <footer class="page-footer">
         <div class="page-footer__container container">
-          <div class="page-footer__logo">
-            <a aria-label="Главная страница Круизов в Антарктику">
-              <svg aria-hidden="true" focusable="false" role="img" width="70" height="38">
-                <use xlink:href="img/sprite_auto.svg#logo"></use>
-              </svg>
-            </a>
-          </div>
-          <section class="page-footer__nav">
-            <ul>
-              <li>
-                <a href="#advantages">Преимущества</a>
-              </li>
-              <li>
-                <a href="#cruises">Направления</a>
-              </li>
-              <li>
-                <a href="#cruises">Ближайшие круизы</a>
-              </li>
-              <li>
-                <a href="#contacts">Контакты</a>
-              </li>
-            </ul>
-          </section>
-          <section class="page-footer__social social">
-            <ul>
-              <li>
-                <a href="#" aria-label="Круизы в Антарктику в Фейсбук">
-                  <img src="img/svg/icon-facebook.svg" width="11" height="20" alt="Иконка Фейсбука">
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="Круизы в Антарктику в Инстаграмм">
-                  <img src="img/svg/icon-insta.svg" width="20" height="20" alt="Иконка Инстаграмма">
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="Круизы в Антарктику в Твиттере">
-                  <img src="img/svg/icon-twitter.svg" width="20" height="16" alt="Иконка Твиттера">
-                </a>
-              </li>
-            </ul>
-          </section>
+          <a class="page-footer__logo" aria-label="Главная страница Круизов в Антарктику">
+            <svg aria-hidden="true" focusable="false" role="img" width="70" height="38">
+              <use xlink:href="img/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="page-footer__nav-list">
+            <li>
+              <a href="#advantages">Преимущества</a>
+            </li>
+            <li>
+              <a href="#cruises">Направления</a>
+            </li>
+            <li>
+              <a href="#cruises">Ближайшие круизы</a>
+            </li>
+            <li>
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+          <ul class="page-footer__social social">
+            <li>
+              <a href="#" aria-label="Круизы в Антарктику в Фейсбук">
+                <img src="img/svg/icon-facebook.svg" width="11" height="20" alt="Иконка Фейсбука">
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Круизы в Антарктику в Инстаграмм">
+                <img src="img/svg/icon-insta.svg" width="20" height="20" alt="Иконка Инстаграмма">
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Круизы в Антарктику в Твиттере">
+                <img src="img/svg/icon-twitter.svg" width="20" height="16" alt="Иконка Твиттера">
+              </a>
+            </li>
+          </ul>
         </div>
       </footer>
     </div>

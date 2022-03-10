@@ -1,7 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
 import {toggleMenu} from './modules/mobile-menu';
-import {scrollAnchors} from './modules/anchors-scroll';
+import {mainNavAnchors, footerNavAnchors, mainNavAnchorsScroll, footerNavAnchorsScroll} from './modules/anchors-scroll';
 import {localStorageDataSet} from './modules/form';
 import {userPhoneInputValidate} from './modules/phone-validate';
 
@@ -17,14 +16,12 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
   toggleMenu();
-  scrollAnchors();
+  mainNavAnchorsScroll(),
+  footerNavAnchorsScroll(),
   localStorageDataSet();
   userPhoneInputValidate();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener('load', () => {
-    initModals();
-  });
 });
 
 // ---------------------------------

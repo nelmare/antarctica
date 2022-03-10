@@ -178,7 +178,7 @@
   }
 }
 
-.contacts a[href="tel:+88002000000"] {
+.contacts__phone-link {
   &::before {
     height: 18px;
     background-image: url("../img/svg/icon-phone.svg");

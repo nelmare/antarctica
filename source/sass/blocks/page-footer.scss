@@ -59,13 +59,7 @@
   }
 }
 
-.page-footer__nav {
-  @include vp-767 {
-    margin-bottom: 17px;
-  }
-}
-
-.page-footer__nav ul {
+.page-footer__nav-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -77,10 +71,11 @@
   @include vp-767 {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 17px;
   }
 }
 
-.page-footer__nav li {
+.page-footer__nav-list li {
   @include vp-767 {
     margin-bottom: 8px;
 
@@ -90,7 +85,7 @@
   }
 }
 
-.page-footer__nav a {
+.page-footer__nav-list a {
   padding: 5px 20px 5px 14px;
   line-height: 20px;
   font-weight: 500;
@@ -113,7 +108,7 @@
 }
 
 .page-footer__social {
-  margin-right: -4px;
+  margin: 0 -4px 0 0;
   justify-self: flex-end;
 
   @include vp-1179 {
