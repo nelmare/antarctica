@@ -6,14 +6,9 @@ export const userPhoneInput = form.querySelector('[name=phone]');
 const localStorageDataSet = () => {
   if (form) {
     let isStorageSupport = true;
-    let storageName = '';
-    let storageEmail = '';
-    let storagePhone = '';
 
     try {
-      storageName = localStorage.getItem('name');
-      storageEmail = localStorage.getItem('email');
-      storagePhone = localStorage.getItem('phone');
+      localStorage.getItem('name');
     } catch (err) {
       isStorageSupport = false;
     }

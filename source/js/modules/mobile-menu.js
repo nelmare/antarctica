@@ -16,7 +16,7 @@ export const toggleMenu = () => {
     }
   });
 
-  navLinks.forEach(navLink => {
+  navLinks.forEach((navLink) => {
     navLink.addEventListener('click', () => {
       if (navMain.classList.contains('is-open')) {
         navMain.classList.remove('is-open');
