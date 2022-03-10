@@ -57,7 +57,7 @@
   }
 }
 
-.cruises li {
+.cruises__item {
   width: 260px;
   min-height: 386px;
   position: relative;
@@ -86,7 +86,7 @@
   }
 }
 
-.cruises img {
+.cruises__item img {
   object-fit: cover;
   height: 100%;
 
@@ -99,7 +99,7 @@
   }
 }
 
-.cruises article {
+.cruises__item article {
   position: absolute;
   top: 0;
   left: 0;
@@ -108,10 +108,21 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 28px 30px 23px 30px;
-  background-color: transparent;
   color: $color-default-alice-blue;
-  //z-index: -1;
+}
+
+.cruises__item dl,
+.cruises__item a {
+  z-index: -1;
+}
+
+.cruises__item:hover article,
+.cruises__item:focus-within article {
+  background-color: $color-default-tangaroa;
+  overflow-y: scroll;
+  padding: 28px 25px;
+  justify-content: flex-start;
+  z-index: 1;
 
   @include vp-1179 {
     padding: 28px 35px 27px 35px;
@@ -122,63 +133,59 @@
   }
 }
 
-.cruises dl,
-.cruises a {
-  //display: none;
-  z-index: -1;
-}
-
-.cruises li:hover article,
-.cruises li:focus-within article {
-  background-color: $color-default-tangaroa;
-  overflow-y: scroll;
-  padding: 28px 25px;
-  justify-content: flex-start;
-  z-index: 1;
-
-  @include vp-1179 {
-    padding: 28px 35px 27px 35px;
-  }
-}
-
-.cruises h4 {
+.cruises__item h4 {
   margin: 0;
+  margin-left: 30px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   position: absolute;
-  bottom: 30px;
+  top: 336px;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+
+  @include vp-1179 {
+    top: 332px;
+    left: 52%;
+  }
+
+  @include vp-767 {
+    top: 341px;
+    left: 48%;
+  }
 }
 
-.cruises li:hover h4,
-.cruises li:focus-within h4 {
+.cruises__item:hover h4,
+.cruises__item:focus-within h4 {
   margin-bottom: 15px;
-  position: static;
+  margin-left: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
 }
 
-.cruises li:hover
-dl,
-.cruises li:focus-within
-dl {
+.cruises__item:hover dl,
+.cruises__item:focus-within dl {
   display: block;
   margin: 0;
   margin-bottom: 12px;
   z-index: 1;
 }
 
-.cruises dt {
+.cruises__item dt {
   font-weight: 500;
   margin-bottom: 2px;
 }
 
-.cruises dd {
+.cruises__item dd {
   margin: 0;
 }
 
-.cruises li:hover a,
-.cruises li:focus-within a {
+.cruises__item:hover a,
+.cruises__item:focus-within a {
   display: block;
   margin: 0;
   margin-top: 14px;
