@@ -12,8 +12,8 @@ const userPhoneInputValidate = () => {
         userPhoneInput.setCustomValidity('Введите номер телефона');
       } else if (typeof userPhoneInput.value === 'string') {
         userPhoneInput.setCustomValidity('Введите номер телефона цифрами');
-      }else {
-        adPriceInput.setCustomValidity('');
+      } else {
+        userPhoneInput.setCustomValidity('');
       }
     });
   }

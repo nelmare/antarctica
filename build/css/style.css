@@ -729,7 +729,7 @@ button,
 }
 
 .intro {
-  padding: 163px 0 278px 95px;
+  padding: 163px 0 277px 95px;
 }
 
 .intro h1 {
@@ -1147,8 +1147,8 @@ button,
   width: 75%;
 }
 
-.booking span {
-  white-space: nowrap;
+.booking br {
+  display: none;
 }
 
 .form {
@@ -1854,7 +1854,7 @@ button,
   }
 
   .site-list li {
-    margin: 15px 35px 13px 25px;
+    margin: 16px 35px 28px 25px;
   }
 
   .site-list a {
@@ -2070,6 +2070,11 @@ button,
     font-size: 16px;
     line-height: 22px;
     width: 96%;
+  }
+
+  .booking br {
+    display: inline-block;
+    vertical-align: middle;
   }
 
   .form {

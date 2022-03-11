@@ -97,6 +97,11 @@
   }
 }
 
-.booking span {
-  white-space: nowrap;
+.booking br {
+  display: none;
+
+  @include vp-767 {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }

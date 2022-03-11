@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {toggleMenu} from './modules/mobile-menu';
-import {mainNavAnchors, footerNavAnchors, mainNavAnchorsScroll, footerNavAnchorsScroll} from './modules/anchors-scroll';
+import {anchorsScroll} from './modules/anchors-scroll';
 import {localStorageDataSet} from './modules/form';
 import {userPhoneInputValidate} from './modules/phone-validate';
 
@@ -16,8 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
   toggleMenu();
-  mainNavAnchorsScroll(),
-  footerNavAnchorsScroll(),
+  anchorsScroll();
   localStorageDataSet();
   userPhoneInputValidate();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
