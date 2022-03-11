@@ -32,10 +32,16 @@ const css = () => {
       .pipe(server.stream());
 };
 
-const js = () => {
+const jsMain = () => {
   return gulp.src(['source/js/main.js'])
       .pipe(webpackStream(webpackConfig))
       .pipe(gulp.dest('build/js'))
+};
+
+const jsVendor = () => {
+  return gulp.src(['source/js/vendor.js'])
+    .pipe(webpackStream(webpackConfig))
+    .pipe(gulp.dest('build/js'))
 };
 
 const svgo = () => {
@@ -96,7 +102,7 @@ const syncServer = () => {
 
   gulp.watch('source/**.html', gulp.series(copy, refresh));
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css));
-  gulp.watch('source/js/**/*.{js,json}', gulp.series(js, refresh));
+  gulp.watch('source/js/**/*.{js,json}', gulp.series(jsMain, refresh));
   gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
   gulp.watch('source/img/**/*.svg', gulp.series(copySvg, sprite, refresh));
   gulp.watch('source/img/**/*.{png,jpg,webp}', gulp.series(copyImages, refresh));
@@ -128,7 +134,7 @@ const optimizeImages = () => {
     .pipe(gulp.dest('build/img'));
 };
 
-const build = gulp.series(clean, svgo, createWebp, copy, optimizeImages, css, sprite, js);
+const build = gulp.series(clean, svgo, createWebp, copy, optimizeImages, css, sprite, jsMain, jsVendor);
 
 const start = gulp.series(build, syncServer);
 
