@@ -1939,7 +1939,7 @@ button,
     position: relative;
   }
 
-  .site-list a:last-of-type {
+  .site-list a:last-of-child {
     padding-bottom: 30px;
   }
 
