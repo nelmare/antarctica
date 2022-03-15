@@ -1857,12 +1857,15 @@ button,
     position: fixed;
     z-index: 1;
     left: 0;
-    top: 0;
+    top: -70px;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
     padding-top: 0;
     min-height: 568px;
+    -webkit-transform: translateY(70px);
+    -ms-transform: translateY(70px);
+    transform: translateY(70px);
   }
 
   .is-nojs {
