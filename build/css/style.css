@@ -1887,7 +1887,7 @@ button,
   .is-open .main-nav__list,
   .is-nojs .main-nav__list {
     display: block;
-    padding: 0 0 69px 0;
+    padding: 0 0 100px 0;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
