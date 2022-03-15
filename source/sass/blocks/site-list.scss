@@ -17,7 +17,8 @@
   }
 
   @include vp-767 {
-    margin: 16px 35px 28px 25px;
+    margin: 16px 35px 0 25px;
+    padding-bottom: 28px;
   }
 }
 
@@ -50,9 +51,5 @@
     line-height: 22px;
     text-align: left;
     position: relative;
-
-&:last-child {
-  padding-bottom: 30px;
-}
   }
 }
