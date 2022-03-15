@@ -1866,6 +1866,7 @@ button,
     -webkit-transform: translateY(70px);
     -ms-transform: translateY(70px);
     transform: translateY(70px);
+    height: 100vh;
   }
 
   .is-nojs {
