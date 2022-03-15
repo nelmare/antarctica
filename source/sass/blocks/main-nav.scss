@@ -118,19 +118,32 @@
   }
 }
 
+.is-open .main-nav__list-wrapper {
+  @include vp-767 {
+    padding: 69px 0 0 0;
+    background-color: $color-default-alice-blue;
+    width: 89%;
+  }
+}
+
 .is-open .main-nav__list,
 .is-nojs .main-nav__list {
   @include vp-767 {
     display: block;
-    padding: 69px 0 69px 0;
+    padding: 0 0 69px 0;
   }
 }
+
 
 .is-open .main-nav__list {
   @include vp-767 {
     height: 100vh;
+    overflow-y: scroll;
+    backface-visibility: hidden;
   }
 }
+
+
 
 .is-open .main-nav__logo {
   @include vp-1023 {

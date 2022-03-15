@@ -1873,14 +1873,23 @@ button,
     min-height: auto;
   }
 
+  .is-open .main-nav__list-wrapper {
+    padding: 69px 0 0 0;
+    background-color: #f9fbfd;
+    width: 89%;
+  }
+
   .is-open .main-nav__list,
   .is-nojs .main-nav__list {
     display: block;
-    padding: 69px 0 69px 0;
+    padding: 0 0 69px 0;
   }
 
   .is-open .main-nav__list {
     height: 100vh;
+    overflow-y: scroll;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 
   .is-open .main-nav__logo,
@@ -1902,11 +1911,6 @@ button,
 
   .is-nojs .main-nav__toggle {
     display: none;
-  }
-
-  .site-list {
-    background-color: #f9fbfd;
-    width: 89%;
   }
 
   .site-list li {
