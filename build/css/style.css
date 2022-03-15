@@ -1862,6 +1862,7 @@ button,
     -ms-flex-pack: end;
     justify-content: flex-end;
     padding-top: 0;
+    padding-bottom: 70px;
     -webkit-transform: translateY(100px);
     -ms-transform: translateY(100px);
     transform: translateY(100px);
