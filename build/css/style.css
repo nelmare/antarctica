@@ -1609,7 +1609,7 @@ button,
   .advantages ul {
     -ms-grid-columns: (30%)[3];
     grid-template-columns: repeat(3, 30%);
-    grid-column-gap: 30px;
+    grid-column-gap: 33px;
   }
 
   .advantages li {

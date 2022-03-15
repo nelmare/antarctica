@@ -66,7 +66,7 @@
 
   @include vp-1023 {
     grid-template-columns: repeat(3, 30%);
-    grid-column-gap: 30px;
+    grid-column-gap: 33px;
   }
 
   @include vp-767 {
