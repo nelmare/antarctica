@@ -1886,7 +1886,7 @@ button,
     padding: 69px 0 69px 0;
     background-color: #f9fbfd;
     width: 89%;
-    height: 96vh;
+    height: 100vh;
   }
 
   .is-open .main-nav__list,
@@ -1937,6 +1937,10 @@ button,
     line-height: 22px;
     text-align: left;
     position: relative;
+  }
+
+  .site-list a:last-of-type {
+    padding-bottom: 30px;
   }
 
   .intro {

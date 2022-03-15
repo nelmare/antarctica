@@ -51,6 +51,8 @@
     text-align: left;
     position: relative;
 
-
+&:last-of-type {
+  padding-bottom: 30px;
+}
   }
 }
