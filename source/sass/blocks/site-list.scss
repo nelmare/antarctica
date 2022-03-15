@@ -18,7 +18,10 @@
 
   @include vp-767 {
     margin: 16px 35px 0 25px;
-    padding-bottom: 28px;
+
+    &:last-child {
+      padding-bottom: 35px;
+    }
   }
 }
 

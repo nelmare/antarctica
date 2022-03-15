@@ -1926,7 +1926,10 @@ button,
 
   .site-list li {
     margin: 16px 35px 0 25px;
-    padding-bottom: 28px;
+  }
+
+  .site-list li:last-child {
+    padding-bottom: 35px;
   }
 
   .site-list a {
