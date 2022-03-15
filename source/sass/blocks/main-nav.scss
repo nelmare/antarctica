@@ -144,7 +144,7 @@
   @include vp-767 {
     height: 96vh;
     overflow-y: scroll;
-    //-webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-overflow-scrolling: touch;
   }
