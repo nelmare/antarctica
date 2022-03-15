@@ -1886,6 +1886,7 @@ button,
     padding: 69px 0 0 0;
     background-color: #f9fbfd;
     width: 89%;
+    height: 100vh;
   }
 
   .is-open .main-nav__list,
@@ -1924,7 +1925,7 @@ button,
   }
 
   .site-list li {
-    margin: 16px 35px 0 25px;
+    margin: 16px 35px 16px 25px;
   }
 
   .site-list a {
