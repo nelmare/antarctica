@@ -10,6 +10,7 @@ export const toggleMenu = () => {
     if (navMain.classList.contains('is-open')) {
       navMain.classList.remove('is-open');
       navMain.classList.add('is-closed');
+      document.body.classList.remove('scroll-lock');
     }
   });
 
@@ -24,7 +25,7 @@ export const toggleMenu = () => {
       navMain.classList.add('is-closed');
       navMain.classList.remove('is-open');
       document.body.classList.remove('scroll-lock');
-      document.body.setAttribute('data-scroll', '');
+      // document.body.setAttribute('data-scroll', '');
     }
     return false;
   });
