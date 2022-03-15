@@ -1892,15 +1892,14 @@ button,
   .is-nojs .main-nav__list {
     display: block;
     padding: 0 0 69px 0;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
   }
 
   .is-open .main-nav__list {
     height: 96vh;
-    overflow: auto;
+    overflow-y: scroll;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 
   .is-open .main-nav__logo,

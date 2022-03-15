@@ -134,8 +134,7 @@
   @include vp-767 {
     display: block;
     padding: 0 0 69px 0;
-    overflow-y: auto;
-    -webkit-overflow-scrolling:touch;
+    //overflow-y: auto;
   }
 }
 
@@ -143,9 +142,10 @@
 .is-open .main-nav__list {
   @include vp-767 {
     height: 96vh;
-    overflow: auto;
+    overflow-y: scroll;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
