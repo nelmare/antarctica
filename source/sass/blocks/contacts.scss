@@ -2,7 +2,7 @@
   padding-top: 120px;
   padding-bottom: 120px;
 
-  @include vp-1179 {
+  @include vp-1023 {
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -20,7 +20,7 @@
   justify-content: center;
   align-items: center;
 
-  @include vp-1179 {
+  @include vp-1023 {
     grid-template-columns: repeat(2, 48%);
     grid-column-gap: 30px;
   }
@@ -37,6 +37,7 @@
   position: relative;
   width: 100%;
   height: 306px;
+  align-self: start;
 
   &::after {
     content: "";
@@ -50,18 +51,18 @@
     background-position: 0 0;
     z-index: 2;
 
-    @include vp-1179 {
+    @include vp-1023 {
       left: 34%;
       bottom: 94px;
     }
 
-    @media (max-width: 767px) {
+    @include vp-767 {
       left: 39%;
       bottom: 70px;
     }
   }
 
-  @include vp-1179 {
+  @include vp-1023 {
     height: 335px;
   }
 
@@ -86,7 +87,7 @@
   position: absolute;
   z-index: 3;
 
-  @include vp-1179 {
+  @include vp-1023 {
     height: 335px;
   }
 
@@ -108,7 +109,7 @@
   right: 0;
   object-fit: cover;
 
-  @include vp-1179 {
+  @include vp-1023 {
     height: 335px;
   }
 
@@ -125,7 +126,7 @@
   margin-bottom: 33px;
   font-weight: 500;
 
-  @include vp-1179 {
+  @include vp-1023 {
     margin-bottom: 28px;
     margin-top: -4px;
   }
@@ -151,7 +152,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
 
-    @include vp-1179 {
+    @include vp-1023 {
       top: 5px;
       transform: none;
     }
@@ -165,7 +166,7 @@
     margin-bottom: 0;
   }
 
-  @include vp-1179 {
+  @include vp-1023 {
     margin-bottom: 22px;
   }
 
@@ -176,9 +177,13 @@
       margin-bottom: 35px;
     }
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
-.contacts__phone-link {
+.contacts .contacts__phone-link {
   &::before {
     height: 18px;
     background-image: url("../img/svg/icon-phone.svg");

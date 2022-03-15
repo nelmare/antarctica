@@ -1,7 +1,7 @@
 .about {
   padding: 120px 0;
 
-  @include vp-1179 {
+  @include vp-1023 {
     padding: 100px 0 94px 0;
   }
 
@@ -12,11 +12,11 @@
 
 .about__container {
   display: grid;
-  grid-template-columns: 1fr 560px;
+  grid-template-columns: 1fr 1.09fr;
   column-gap: 88px;
   justify-items: center;
 
-  @include vp-1179 {
+  @include vp-1023 {
     grid-template-columns: 47.5% 48%;
     column-gap: 30px;
   }
@@ -35,11 +35,11 @@
   line-height: 42px;
   margin-bottom: 23px;
 
-  @include vp-1365 {
+  @include vp-1179 {
     padding-top: 0;
   }
 
-  @include vp-1179 {
+  @include vp-1023 {
     padding-right: 25px;
     margin-top: -9px;
     font-size: 26px;
@@ -63,14 +63,16 @@
 }
 
 .about .about__image-container {
-  width: 560px;
+  max-width: 560px;
   height: 301px;
+  align-self: end;
 
-  @include vp-1179 {
+  @include vp-1023 {
     min-width: 324px;
     width: 100%;
     height: 264px;
     justify-self: center;
+    align-self: start;
   }
 
   @include vp-767 {

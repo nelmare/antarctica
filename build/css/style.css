@@ -606,6 +606,11 @@ button,
   display: none;
 }
 
+.scroll-lock {
+  position: fixed;
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   max-width: 1366px;
@@ -631,6 +636,10 @@ button,
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .btn:disabled {
@@ -757,9 +766,9 @@ button,
 }
 
 .page-footer__container {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 70px auto 126px;
@@ -784,6 +793,7 @@ button,
 .page-footer__nav-list {
   margin: 0;
   padding: 0;
+  padding-top: 6px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -871,8 +881,8 @@ button,
 .about__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 560px;
-  grid-template-columns: 1fr 560px;
+  -ms-grid-columns: 1fr 1.09fr;
+  grid-template-columns: 1fr 1.09fr;
   -webkit-column-gap: 88px;
   -moz-column-gap: 88px;
   column-gap: 88px;
@@ -894,8 +904,11 @@ button,
 }
 
 .about .about__image-container {
-  width: 560px;
+  max-width: 560px;
   height: 301px;
+  -ms-flex-item-align: end;
+  -ms-grid-row-align: end;
+  align-self: end;
 }
 
 .about img {
@@ -910,7 +923,7 @@ button,
 
 .advantages {
   padding-top: 110px;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
   background-color: #d6e4f3;
   background-repeat: no-repeat;
   background-position: center;
@@ -946,6 +959,7 @@ button,
   background-color: #f9fbfd;
   padding: 80px 30px 25px 30px;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .advantages img {
@@ -1001,7 +1015,8 @@ button,
 }
 
 .cruises__item {
-  width: 260px;
+  width: 100%;
+  max-width: 260px;
   min-height: 386px;
   position: relative;
   font-size: 14px;
@@ -1009,7 +1024,8 @@ button,
 }
 
 .cruises__image-wrapper {
-  width: 260px;
+  width: 100%;
+  max-width: 260px;
   height: 386px;
 }
 
@@ -1119,9 +1135,9 @@ button,
 .booking__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 500px 403px;
-  grid-template-columns: 500px 403px;
-  grid-column-gap: 137px;
+  -ms-grid-columns: 44% 35%;
+  grid-template-columns: 44% 35%;
+  grid-column-gap: 11%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1155,7 +1171,8 @@ button,
   background-color: #011c40;
   color: #f9fbfd;
   padding: 43px 50px 40px 50px;
-  width: 403px;
+  width: 100%;
+  max-width: 403px;
   -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
 }
@@ -1295,6 +1312,9 @@ button,
   position: relative;
   width: 100%;
   height: 306px;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
 }
 
 .contacts__container .contacts__map-wrapper::after {
@@ -1369,7 +1389,11 @@ button,
   margin-bottom: 0;
 }
 
-.contacts__phone-link::before {
+.contacts a:hover {
+  opacity: 0.8;
+}
+
+.contacts .contacts__phone-link::before {
   height: 18px;
   background-image: url("../img/svg/icon-phone.svg");
 }
@@ -1388,7 +1412,7 @@ button,
   }
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 1024px) {
   .page-header {
     background-image: url("../img/content/intro-back-desktop@1x.jpg");
   }
@@ -1402,7 +1426,7 @@ button,
   }
 }
 
-@media (min-width: 1180px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1180px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1180px) and (min-resolution: 144dpi), (min-width: 1180px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .page-header {
     background-image: url("../img/content/intro-back-desktop@2x.jpg");
   }
@@ -1416,13 +1440,33 @@ button,
   }
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1179px) {
+  .page-footer__nav-list a {
+    font-size: 14px;
+  }
+
   .about h2 {
     padding-top: 0;
   }
+
+  .cruises ul {
+    -ms-grid-columns: (260px)[3];
+    grid-template-columns: repeat(3, 260px);
+    grid-gap: 19px;
+  }
+
+  .booking h2 {
+    font-size: 37px;
+    line-height: 54px;
+  }
+
+  .booking p {
+    font-size: 16px;
+    width: 100%;
+  }
 }
 
-@media (max-width: 1179px) {
+@media (max-width: 1023px) {
   .container {
     padding: 0 45px;
   }
@@ -1476,7 +1520,7 @@ button,
 
   .page-footer {
     padding-top: 44px;
-    padding-bottom: 45px;
+    padding-bottom: 46px;
   }
 
   .page-footer__container {
@@ -1490,11 +1534,16 @@ button,
   .page-footer__logo {
     width: 38px;
     height: 20px;
+    padding-top: 4px;
   }
 
   .page-footer__logo svg {
     width: 42px;
     height: 22px;
+  }
+
+  .page-footer__nav-list {
+    padding-top: 3px;
   }
 
   .page-footer__nav-list a {
@@ -1542,11 +1591,14 @@ button,
     height: 264px;
     -ms-grid-column-align: center;
     justify-self: center;
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
+    align-self: start;
   }
 
   .advantages {
     padding-top: 89px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     background-image: url("../img/content/advantages-back-tablet@1x.png");
   }
 
@@ -1603,13 +1655,16 @@ button,
   .cruises ul {
     -ms-grid-columns: (309px)[2];
     grid-template-columns: repeat(2, 309px);
+    grid-gap: 30px;
   }
 
   .cruises__item {
+    max-width: none;
     width: 309px;
   }
 
   .cruises__image-wrapper {
+    max-width: none;
     width: 309px;
   }
 
@@ -1654,6 +1709,7 @@ button,
     text-align: center;
     margin: 0 auto;
     width: 57%;
+    font-size: 18px;
   }
 
   .form {
@@ -1712,7 +1768,7 @@ button,
   }
 }
 
-@media (max-width: 1179px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1179px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1179px) and (min-resolution: 144dpi), (max-width: 1179px) and (min-resolution: 1.5dppx) {
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .page-header {
     background-image: url("../img/content/intro-back-tablet@2x.jpg");
   }
@@ -1824,7 +1880,7 @@ button,
   }
 
   .is-open .main-nav__list {
-    min-height: 568px;
+    height: 100vh;
   }
 
   .is-open .main-nav__logo,
@@ -1880,7 +1936,7 @@ button,
   .intro p {
     font-size: 16px;
     line-height: 22px;
-    width: 205px;
+    width: 75%;
   }
 
   .page-footer {
@@ -1902,6 +1958,7 @@ button,
     width: 42px;
     height: 22px;
     margin-bottom: 21px;
+    padding-top: 0;
   }
 
   .page-footer__nav-list {
@@ -1913,6 +1970,7 @@ button,
     -ms-flex-align: start;
     align-items: flex-start;
     margin-bottom: 17px;
+    padding-top: 0;
   }
 
   .page-footer__nav-list li {

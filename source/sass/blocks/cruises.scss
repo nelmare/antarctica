@@ -2,7 +2,7 @@
   padding-top: 110px;
   padding-bottom: 120px;
 
-  @include vp-1179 {
+  @include vp-1023 {
     padding-top: 89px;
     padding-bottom: 100px;
   }
@@ -21,7 +21,7 @@
   margin-bottom: 49px;
   text-align: center;
 
-  @include vp-1179 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
     margin-bottom: 50px;
@@ -45,7 +45,13 @@
   justify-content: center;
 
   @include vp-1179 {
+    grid-template-columns: repeat(3, 260px);
+    grid-gap: 19px;
+  }
+
+  @include vp-1023 {
     grid-template-columns: repeat(2, 309px);
+    grid-gap: 30px;
   }
 
   @include vp-767 {
@@ -58,13 +64,15 @@
 }
 
 .cruises__item {
-  width: 260px;
+  width: 100%;
+  max-width: 260px;
   min-height: 386px;
   position: relative;
   font-size: 14px;
   line-height: 19px;
 
-  @include vp-1179 {
+  @include vp-1023 {
+    max-width: none;
     width: 309px;
   }
 
@@ -74,10 +82,12 @@
 }
 
 .cruises__image-wrapper {
-  width: 260px;
+  width: 100%;
+  max-width: 260px;
   height: 386px;
 
-  @include vp-1179 {
+  @include vp-1023 {
+    max-width: none;
     width: 309px;
   }
 
@@ -90,7 +100,7 @@
   object-fit: cover;
   height: 100%;
 
-  @include vp-1179 {
+  @include vp-1023 {
     width: 309px;
   }
 
@@ -124,7 +134,7 @@
   justify-content: flex-start;
   z-index: 1;
 
-  @include vp-1179 {
+  @include vp-1023 {
     padding: 28px 35px 27px 35px;
   }
 
@@ -146,7 +156,7 @@
   width: 100%;
   z-index: 1;
 
-  @include vp-1179 {
+  @include vp-1023 {
     top: 332px;
     left: 52%;
   }

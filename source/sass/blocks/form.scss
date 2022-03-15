@@ -2,10 +2,11 @@
   background-color: $color-default-tangaroa;
   color: $color-default-alice-blue;
   padding: 43px 50px 40px 50px;
-  width: 403px;
+  width: 100%;
+  max-width: 403px;
   box-shadow: 0 4px 45px $color-tangaroa-transparent15;
 
-  @include vp-1179 {
+  @include vp-1023 {
     margin: 0 auto;
     padding: 43px 48px 40px 49px;
   }
@@ -28,7 +29,7 @@
   width: auto;
   margin-bottom: 28px;
 
-  @include vp-1179 {
+  @include vp-1023 {
     width: auto;
     text-align: left;
     margin-bottom: 28px;

@@ -1,12 +1,12 @@
 .advantages {
   padding-top: 110px;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
   background-color: $color-pattens-blue;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media (min-width: 1180px) {
+  @media (min-width: 1024px) {
     background-image: url("../img/content/advantages-back-desktop@1x.png");
 
     @include retina {
@@ -14,9 +14,9 @@
     }
   }
 
-  @include vp-1179 {
+  @include vp-1023 {
     padding-top: 89px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     background-image: url("../img/content/advantages-back-tablet@1x.png");
 
     @include retina {
@@ -43,7 +43,7 @@
   margin-bottom: 49px;
   text-align: center;
 
-  @include vp-1179 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
     margin-bottom: 50px;
@@ -76,8 +76,9 @@
   background-color: $color-default-alice-blue;
   padding: 80px 30px 25px 30px;
   position: relative;
+  margin-bottom: 40px;
 
-  @include vp-1179 {
+  @include vp-1023 {
     width: 30%;
     padding: 70px 15px 21px 18px;
   }
@@ -94,28 +95,28 @@
   top: 35px;
   left: 30px;
 
-  @include vp-1179 {
+  @include vp-1023 {
     top: 29px;
     left: 20px;
   }
 }
 
 .advantages__item--ship img {
-  @include vp-1179 {
+  @include vp-1023 {
     width: 21px;
     height: 26px;
   }
 }
 
 .advantages__item--waves img {
-  @include vp-1179 {
+  @include vp-1023 {
     width: 33px;
     height: 19px;
   }
 }
 
 .advantages__item--boat img {
-  @include vp-1179 {
+  @include vp-1023 {
     width: 38px;
     height: 13px;
   }
@@ -128,7 +129,7 @@
   line-height: 27px;
   margin-bottom: 9px;
 
-  @include vp-1179 {
+  @include vp-1023 {
     line-height: 25px;
   }
 
@@ -144,7 +145,7 @@
   line-height: 20px;
   padding-right: 11px;
 
-  @include vp-1179 {
+  @include vp-1023 {
     padding-right: 4px;
   }
 }

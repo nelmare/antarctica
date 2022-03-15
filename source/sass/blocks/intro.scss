@@ -1,7 +1,7 @@
 .intro {
   padding: 163px 0 277px 95px;
 
-  @include vp-1179 {
+  @include vp-1023 {
     padding: 193px 0 275px 0;
   }
 
@@ -19,7 +19,7 @@
   line-height: 66px;
   margin-bottom: 13px;
 
-  @include vp-1179 {
+  @include vp-1023 {
     font-size: 50px;
     line-height: 61px;
     margin-bottom: 11px;
@@ -37,7 +37,7 @@
   font-size: 20px;
   line-height: 24px;
 
-  @include vp-1179 {
+  @include vp-1023 {
     font-size: 18px;
     line-height: 23px;
   }
@@ -45,6 +45,6 @@
   @include vp-767 {
     font-size: 16px;
     line-height: 22px;
-    width: 205px;
+    width: 75%;
   }
 }

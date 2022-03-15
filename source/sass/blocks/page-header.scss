@@ -12,7 +12,7 @@
   background-position: center;
   background-size: cover;
 
-  @media (min-width: 1180px) {
+  @media (min-width: 1024px) {
     background-image: url("../img/content/intro-back-desktop@1x.jpg");
 
     @include retina {
@@ -20,7 +20,7 @@
     }
   }
 
-  @include vp-1179 {
+  @include vp-1023 {
     padding-top: 30px;
     background-image: url("../img/content/intro-back-tablet@1x.jpg");
 

@@ -18,7 +18,7 @@
     margin-right: 0;
   }
 
-  @include vp-1179 {
+  @include vp-1023 {
     margin-right: 8px;
   }
 
@@ -50,7 +50,7 @@
   max-width: 20px;
   max-height: 20px;
 
-  @include vp-1179 {
+  @include vp-1023 {
     max-width: 16px;
     max-height: 16px;
   }
