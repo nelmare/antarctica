@@ -1883,7 +1883,7 @@ button,
   }
 
   .is-open .main-nav__list-wrapper {
-    padding: 69px 0 0 0;
+    padding: 69px 0 69px 0;
     background-color: #f9fbfd;
     width: 89%;
   }
