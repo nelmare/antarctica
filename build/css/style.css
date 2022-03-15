@@ -1897,7 +1897,7 @@ button,
 
   .is-open .main-nav__list {
     height: 96vh;
-    overflow: scroll;
+    overflow-y: scroll;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-overflow-scrolling: touch;
@@ -1926,6 +1926,7 @@ button,
 
   .site-list li {
     margin: 16px 35px 0 25px;
+    padding-bottom: 28px;
   }
 
   .site-list a {
