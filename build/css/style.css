@@ -640,6 +640,7 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn:disabled {
@@ -1884,6 +1885,8 @@ button,
   .is-nojs .main-nav__list {
     display: block;
     padding: 0 0 69px 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .is-open .main-nav__list {

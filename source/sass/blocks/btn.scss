@@ -18,6 +18,7 @@
   transition: opacity $trans-default;
 
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 
   &:disabled {
     opacity: 0.5;

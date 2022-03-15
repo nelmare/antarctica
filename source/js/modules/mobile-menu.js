@@ -45,6 +45,7 @@ export const toggleMenu = () => {
       if (navMain.classList.contains('is-open')) {
         navMain.classList.remove('is-open');
         navMain.classList.add('is-closed');
+        document.body.classList.remove('scroll-lock');
       }
     }
   });

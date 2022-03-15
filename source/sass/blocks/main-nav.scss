@@ -131,6 +131,8 @@
   @include vp-767 {
     display: block;
     padding: 0 0 69px 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling:touch;
   }
 }
 
