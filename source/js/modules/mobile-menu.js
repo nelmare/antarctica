@@ -25,7 +25,6 @@ export const toggleMenu = () => {
       navMain.classList.add('is-closed');
       navMain.classList.remove('is-open');
       document.body.classList.remove('scroll-lock');
-      // document.body.setAttribute('data-scroll', '');
     }
     return false;
   });
