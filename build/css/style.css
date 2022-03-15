@@ -1897,7 +1897,7 @@ button,
   }
 
   .is-open .main-nav__list {
-    height: 96vh;
+    height: 90vh;
     overflow-y: auto;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
