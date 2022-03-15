@@ -1897,7 +1897,7 @@ button,
 
   .is-open .main-nav__list {
     height: 96vh;
-    overflow: auto;
+    overflow: scroll;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-overflow-scrolling: touch;
