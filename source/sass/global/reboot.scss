@@ -14,9 +14,10 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-montserrat;
-  color: $color-default-tangaroa;
+  line-height: 22px;
+  font-family: $ff-ptmono;
+  color: $color-default-black-pearl;
+  background-color: $color-default-alice-blue;
   text-align: left;
 
   -webkit-font-smoothing: antialiased;
@@ -33,7 +34,7 @@ body {
 }
 
 a {
-  color: $color-default-alice-blue;
+  color: $color-alice-blue;
   text-decoration: none;
 }
 
@@ -57,7 +58,7 @@ textarea {
 input:-webkit-autofill {
   box-shadow: inset 0 0 0 1000px $color-default-alice-blue;
 
-  -webkit-text-fill-color: $color-default-tangaroa;
+  -webkit-text-fill-color: $color-white;
 }
 
 // firefox placeholder \ invalid fix + ios bdrs

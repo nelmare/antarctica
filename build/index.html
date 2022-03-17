@@ -4,491 +4,310 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Круизы в Антарктику. Преимущества, направления, ближайшие круизы">
-    <title>Cruises to Antarctica</title>
-    <link rel="preload" href="fonts/montserratregular.woff2" as="font" crossorigin>
-    <link rel="preload" href="fonts/montserratbold.woff2" as="font" crossorigin>
-    <link rel="preload" href="fonts/montserratsemibold.woff2" as="font" crossorigin>
-    <link rel="preload" href="fonts/montserratmedium.woff2" as="font" crossorigin>
+    <meta name="description" content="Печатные платы. Преимущества, товары, консультирование">
+    <title>Smart Devices</title>
+    <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/ptmono-regular.woff2" as="font" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="no-scrollbar">
     <div class="wrapper">
       <header class="page-header">
         <div class="page-header__container container">
-          <nav class="main-nav is-nojs is-closed">
-            <a class="main-nav__logo" aria-label="Логотип Круизы в Антарктику">
-              <svg width="70" height="38" focusable="false" role="img">
-                <use xlink:href="img/sprite_auto.svg#logo"></use>
-              </svg>
+          <nav class="main-nav">
+            <a class="main-nav__logo" aria-label="Логотип компании Печатные платы">
+              <!-- 1х: 215px -->
+              <img srcset="img/content/logo-desktop.svg 215w, img/content/logo-mobile.svg 35w"
+                sizes="(min-width: 768px) 215w, (max-width: 767px) 35w" src="img/content/logo-desktop.svg"
+                width="215" height="55" alt="Логотип Smart Device">
             </a>
-            <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
-              <span class="visually-hidden">Открыть меню / Закрыть меню</span>
-            </button>
-            <div class="main-nav__list-wrapper">
-              <ul class="main-nav__list site-list no-scrollbar">
-                <li>
-                  <a href="#advantages" data-anchor="1">Преимущества</a>
-                </li>
-                <li>
-                  <a href="#cruises" data-anchor="1">Направления</a>
-                </li>
-                <li>
-                  <a href="#cruises" data-anchor="1">Ближайшие круизы</a>
-                </li>
-                <li>
-                  <a href="#contacts" data-anchor="1">Контакты</a>
-                </li>
-              </ul>
-            </div>
+            <address>
+              <a class="contacts__email-link" href="info@sd.ru">info@sd.ru</a>
+              <a class="contacts__phone-link" href="tel:+84950005252">+7 (495) 000 52 52</a>
+            </address>
+            <ul>
+              <li>
+                <a href="#">Заказать звонок</a>
+              </li>
+            </ul>
           </nav>
         </div>
         <section class="intro">
           <div class="container">
-            <h1>Круизы в&nbsp;Антарктику </h1>
-            <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
+            <h1>Печатные платы</h1>
+            <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <a href="#questions-form" data-anchor="1">Получить бесплатную консультацию</a>
           </div>
         </section>
       </header>
       <main class="page-main">
-        <section class="about">
-          <div class="about__container container">
-            <div>
-              <h2>Путешествие на&nbsp;край Земли</h2>
-              <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный
-                лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов,
-                китов, морских котиков и многое другое.</p>
-            </div>
-            <div class="about__image-container">
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/content/penguins-mobile@1x.webp 1x,
-                  img/content/penguins-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/penguins-tablet@1x.webp 1x,
-                  img/content/penguins-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/content/penguins-desktop@1x.webp 1x, img/content/penguins-desktop@2x.webp 2x">
-                <!-- 1х: 560px; 2x: 1120px -->
-                <img src="img/content/penguins-desktop@1x.jpg" srcset="img/content/penguins-desktop@2x.jpg 2x"
-                  width="560" height="301" alt="Три пингвина стоят на льду">
-              </picture>
-            </div>
-          </div>
-        </section>
         <section class="advantages" id="advantages">
           <div class="container">
             <h2>Преимущества</h2>
             <ul>
               <li class="advantages__item advantages__item--ship">
-                <img src="img/svg/icon-ship.svg" aria-hidden="true" width="27" height="32" alt="Изображение корабля">
-                <h3>Небольшой круизный&nbsp;лайнер</h3>
-                <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст
-                  возможность насладиться видами и&nbsp;природой.</p>
+                <img src="img/sprite/icon-stopwatch.svg" aria-hidden="true" width="35" height="35" alt="Изображение будильника">
+                <h3>Оперативные сроки</h3>
+                <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и
+                  доставлять заказы плат и комплектующих в самые короткие сроки</p>
               </li>
               <li class="advantages__item advantages__item--waves">
-                <img src="img/svg/icon-waves.svg" aria-hidden="true" width="38" height="21" alt="Изображение
-                волн">
-                <h3>Система все&nbsp;включено</h3>
-                <p>Все наши круизы работают по&nbsp;системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар
-                  доступны для&nbsp;вас 24&nbsp;часа.</p>
+                <img src="img/sprite/icon-hired.svg" aria-hidden="true" width="35" height="35" alt="Изображение
+                группы людей">
+                <h3>Крупные поставщики</h3>
+                <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+                  Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
               </li>
               <li class="advantages__item advantages__item--boat">
-                <img src="img/svg/icon-boat.svg" aria-hidden="true" width="42" height="15" alt="Изображение
-                лодки">
-                <h3>Экскурсионные туры на Zodiac</h3>
-                <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа
-                  Zodiac в&nbsp;сопровождении<br> опытных экскурсоводов.</p>
+                <img src="img/sprite/icon-detective.svg" aria-hidden="true" width="35" height="35" alt="Изображение
+                головы человека в очках и шляпе">
+                <h3>Полная конфиденциальность</h3>
+                <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+              </li>
+              <li class="advantages__item advantages__item--boat">
+                <img src="img/sprite/icon-tag.svg" aria-hidden="true" width="35" height="35" alt="Изображение
+                бирки">
+                <h3>Персонализация стоимости</h3>
+                <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+                  устраивает.
+                </p>
               </li>
             </ul>
           </div>
         </section>
-        <section class="cruises" id="cruises">
-          <div class="container">
-            <h2 id="tours">Ближайшие круизы</h2>
-            <ul>
-              <li class="cruises__item">
-                <div class="cruises__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/astoria-back-mobile@1x.webp 1x,
-                      img/content/astoria-back-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/astoria-back-tablet@1x.webp 1x,
-                      img/content/astoria-back-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/astoria-back-desktop@1x.webp 1x,
-                      img/content/astoria-back-desktop@2x.webp 2x">
-                    <!-- 1х: 309px; 2x: 618px -->
-                    <img src="img/content/astoria-back-tablet@1x.jpg" srcset="img/content/astoria-back-tablet@2x.jpg 2x"
-                      alt="Возвышенности Антарктиды, покрытые снегом, и лед на воде" width="309" height="386">
-                  </picture>
-                </div>
-                <article class="no-scrollbar">
-                  <h4>Круиз “Астория”</h4>
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Фолклендские острова - Антарктида</dd>
-                  </dl>
-                  <dl>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                  </dl>
-                  <dl>
-                    <dt>Продолжительность</dt>
-                    <dd>11 дней</dd>
-                  </dl>
-                  <dl>
-                    <dt>Цена</dt>
-                    <dd>от 11500 $</dd>
-                  </dl>
-                  <a class="btn" href="#">Забронировать</a>
-                </article>
-              </li>
-              <li class="cruises__item">
-                <div class="cruises__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/astoria-back-mobile@1x.webp 1x,
-                    img/content/astoria-back-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/astoria-back-tablet@1x.webp 1x,
-                    img/content/astoria-back-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/astoria-back-desktop@1x.webp 1x,
-                    img/content/astoria-back-desktop@2x.webp 2x">
-                    <!-- 1х: 309px; 2x: 618px -->
-                    <img src="img/content/astoria-back-tablet@1x.jpg" srcset="img/content/astoria-back-tablet@2x.jpg 2x"
-                  alt="Возвышенности Антарктиды, покрытые снегом, и лед на воде" width="309" height="386">
-                  </picture>
-                </div>
-                <article class="no-scrollbar">
-                  <h4>Круиз “Элайн”</h4>
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
-                  </dl>
-                  <dl>
-                    <dt>Порт отправления</dt>
-                    <dd>Буэнос-Айрес</dd>
-                  </dl>
-                  <dl>
-                    <dt>Продолжительность</dt>
-                    <dd>20 дней</dd>
-                  </dl>
-                  <dl>
-                    <dt>Цена</dt>
-                    <dd>от 14500 $</dd>
-                  </dl>
-                  <a class="btn" href="#">Забронировать</a>
-                </article>
-              </li>
-              <li class="cruises__item">
-                <div class="cruises__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/atlantis-back-mobile@1x.webp 1x,
-                    img/content/atlantis-back-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/atlantis-back-tablet@1x.webp 1x,
-                    img/content/atlantis-back-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/atlantis-back-desktop@1x.webp 1x,
-                    img/content/atlantis-back-desktop@2x.webp 2x">
-                    <!-- 1х: 309px; 2x: 618px -->
-                    <img src="img/content/atlantis-back-tablet@1x.jpg" srcset="img/content/atlantis-back-tablet@2x.jpg 2x"
-                  alt="Плавающие льдины Антарктиды" width="309" height="386">
-                  </picture>
-                </div>
-                <article class="no-scrollbar">
-                  <h4>Круиз “Атлантис”</h4>
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
-                  </dl>
-                  <dl>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                  </dl>
-                  <dl>
-                    <dt>Продолжительность</dt>
-                    <dd>15 дней</dd>
-                  </dl>
-                  <dl>
-                    <dt>Цена</dt>
-                    <dd>от 14500 $</dd>
-                  </dl>
-                  <a class="btn" href="#">Забронировать</a>
-                </article>
-              </li>
-              <li class="cruises__item">
-                <div class="cruises__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/odysseus-back-mobile@1x.webp 1x,
-                    img/content/odysseus-back-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/odysseus-back-tablet@1x.webp 1x,
-                    img/content/odysseus-back-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/odysseus-back-desktop@1x.webp 1x,
-                    img/content/odysseus-back-desktop@2x.webp 2x">
-                    <!-- 1х: 309px; 2x: 618px -->
-                    <img src="img/content/odysseus-back-tablet@1x.jpg" srcset="img/content/odysseus-back-tablet@2x.jpg 2x"
-                  alt="Возвышенности, лед и вода на фоне голубого неба" width="309" height="386">
-                  </picture>
-                </div>
-                <article class="no-scrollbar">
-                  <h4>Круиз “Одиссей”</h4>
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Чили - Антарктида</dd>
-                  </dl>
-                  <dl>
-                    <dt>Порт отправления</dt>
-                    <dd>Пунта-Аренас</dd>
-                  </dl>
-                  <dl>
-                    <dt>Продолжительность</dt>
-                    <dd>13 дней</dd>
-                  </dl>
-                  <dl>
-                    <dt>Цена</dt>
-                    <dd>от 9700 $</dd>
-                  </dl>
-                  <a class="btn" href="#">Забронировать</a>
-                </article>
-              </li>
-              <li class="cruises__item">
-                <div class="cruises__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/olympia-back-mobile@1x.webp 1x,
-                    img/content/olympia-back-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/olympia-back-tablet@1x.webp 1x,
-                    img/content/olympia-back-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/olympia-back-desktop@1x.webp 1x,
-                    img/content/olympia-back-desktop@2x.webp 2x">
-                    <!-- 1х: 309px; 2x: 618px -->
-                    <img src="img/content/olympia-back-tablet@1x.jpg" srcset="img/content/olympia-back-tablet@2x.jpg 2x"
-                  alt="Пингвины, окруженные льдами Антарктики" width="309" height="386">
-                  </picture>
-                </div>
-                <article class="no-scrollbar">
-                  <h4>Круиз “Олимпия”</h4>
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
-                  </dl>
-                  <dl>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                  </dl>
-                  <dl>
-                    <dt>Продолжительность</dt>
-                    <dd>21 дней</dd>
-                  </dl>
-                  <dl>
-                    <dt>Цена</dt>
-                    <dd>от 18600 $</dd>
-                  </dl>
-                  <a class="btn" href="#">Забронировать</a>
-                </article>
-              </li>
-              <li class="cruises__item">
-                <div class="cruises__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/aurora-back-mobile@1x.webp 1x,
-                    img/content/aurora-back-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/aurora-back-tablet@1x.webp 1x,
-                    img/content/aurora-back-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/aurora-back-desktop@1x.webp 1x,
-                    img/content/aurora-back-desktop@2x.webp 2x">
-                    <!-- 1х: 309px; 2x: 618px -->
-                    <img src="img/content/aurora-back-tablet@1x.jpg" srcset="img/content/aurora-back-tablet@2x.jpg 2x"
-                  alt="Берег Антарктиды, покрытый снегом и льдом" width="309" height="386">
-                  </picture>
-                </div>
-                <article class="no-scrollbar">
-                  <h4>Круиз “Аврора”</h4>
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Антарктида - Чили</dd>
-                  </dl>
-                  <dl>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                  </dl>
-                  <dl>
-                    <dt>Продолжительность</dt>
-                    <dd>14 дней</dd>
-                  </dl>
-                  <dl>
-                    <dt>Цена</dt>
-                    <dd>от 11700 $</dd>
-                  </dl>
-                  <a class="btn" href="#">Забронировать</a>
-                </article>
-              </li>
-              <li class="cruises__item">
-                <div class="cruises__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/leonor-back-mobile@1x.webp 1x,
-                    img/content/leonor-back-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/leonor-back-tablet@1x.webp 1x,
-                    img/content/leonor-back-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/leonor-back-desktop@1x.webp 1x,
-                    img/content/leonor-back-desktop@2x.webp 2x">
-                    <!-- 1х: 309px; 2x: 618px -->
-                    <img src="img/content/leonor-back-tablet@1x.jpg" srcset="img/content/leonor-back-tablet@2x.jpg 2x"
-                  alt="Лодка плывет по холодным водам Антарктиды" width="309" height="386">
-                  </picture>
-                </div>
-                <article>
-                  <h4>Круиз “Леонор”</h4>
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Чили - Южная Георгия - Антарктида - Аргентина</dd>
-                  </dl>
-                  <dl>
-                    <dt>Порт отправления</dt>
-                    <dd>Пунта-Аренас</dd>
-                  </dl>
-                  <dl>
-                    <dt>Продолжительность</dt>
-                    <dd>17 дней</dd>
-                  </dl>
-                  <dl>
-                    <dt>Цена</dt>
-                    <dd>от 12500 $</dd>
-                  </dl>
-                  <a class="btn" href="#">Забронировать</a>
-                </article>
-              </li>
-              <li class="cruises__item">
-                <div class="cruises__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/minion-back-mobile@1x.webp 1x,
-                    img/content/minion-back-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/minion-back-tablet@1x.webp 1x,
-                    img/content/minion-back-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/minion-back-desktop@1x.webp 1x,
-                    img/content/minion-back-desktop@2x.webp 2x">
-                    <!-- 1х: 309px; 2x: 618px -->
-                    <img src="img/content/minion-back-tablet@1x.jpg" srcset="img/content/minion-back-tablet@2x.jpg 2x"
-                  alt="Вода и возвышенности Антарктиды, люди идут к берегу" width="309" height="386">
-                  </picture>
-                </div>
-                <article>
-                  <h4>Круиз “Минион&nbsp;-&nbsp;1”</h4>
-                  <dl>
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Антарктида</dd>
-                  </dl>
-                  <dl>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                  </dl>
-                  <dl>
-                    <dt>Продолжительность</dt>
-                    <dd>11 дней</dd>
-                  </dl>
-                  <dl>
-                    <dt>Цена</dt>
-                    <dd>от 12300 $</dd>
-                  </dl>
-                  <a class="btn" href="#">Забронировать</a>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="booking">
-          <div class="booking__container container">
-            <article>
-              <h2>Раннее бронирование</h2>
-              <p>Забронируйте тур <br>за 3-6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте&nbsp;до&nbsp;50%</p>
-            </article>
-            <form class="booking__form form" action="https://echo.htmlacademy.ru" method="post">
-              <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+        <section class="about">
+          <div class="about__container container">
+            <div>
+              <h2>О компании</h2>
               <div>
-                <input type="text" name="name" id="booking-name" placeholder="Имя" required>
-                <label class="visually-hidden" for="booking-name">Имя</label>
+                <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
+                  1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+                <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+                Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
+                (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
+                Производители светотехники России.</p>
               </div>
-              <div>
-                <input type="tel" name="phone" id="booking-phone" placeholder="Телефон"
-                  minlength="11" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
-                <label class="visually-hidden" for="booking-phone">Телефон</label>
-              </div>
-              <div>
-                <input type="email" name="e-mail" id="booking-email" placeholder="Email" required>
-                <label class="visually-hidden" for="booking-email">Еmail</label>
-              </div>
-              <div class="form__checkbox-wrapper">
-                <label for="personal-data">
-                  <input class="visually-hidden" type="checkbox" name="consent-personal-data" id="personal-data"
-                  required checked>
-                  <span></span>
-                  Я согласен на обработку моих персональных данных
-                </label>
-              </div>
-              <button class="btn" type="submit">Оставить заявку</button>
-            </form>
-          </div>
-        </section>
-        <section class="contacts" id="contacts">
-          <h2 class="visually-hidden">Контакты турагента</h2>
-          <div class="contacts__container container">
-            <div class="contacts__map-wrapper">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586862!2d30.320853351719368!3d59.93871648178723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630080183634!5m2!1sru!2sru"
-                width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0"></iframe>
+               <div>
+                 <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
+                  продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и
+                  20 городов присутствия.</p>
+                 <p>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
+                  Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
+               </div>
+              <button type="button">
+                <span>Подробнее</span>
+                <span>Свернуть</span>
+              </button>
+            </div>
+            <div class="about__image-container">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/content/map-mobile@1x.webp 1x,
-                img/content/map-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/map-tablet@1x.webp 1x,
-                img/content/map-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/content/map-desktop@1x.webp 1x,
-              img/content/map-desktop@2x.webp 2x">
-                <!-- 1х: 560px; 2x: 1120px -->
-                <img src="img/content/map-desktop@1x.png" srcset="img/content/map-desktop@2x.png 2x"
-                  alt="Офис компании расположен по адресу: Санкт-Петербург, ул.БольшаяКонюшенная,д.19/8"
-                  width="560" height="306">
+                <source type="image/webp" srcset="img/content/about-image@1x.webp 1x, img/content/about-image@2x.webp 2x">
+                <!-- 1х: 150px; 2x: 300px -->
+                <img src="img/content/about-image@1x.jpg" srcset="img/content/about-image@2x.jpg 2x"
+                  width="150" height="320" alt="Изображение года 2022">
               </picture>
             </div>
-            <div>
-              <p>У&nbsp;вас&nbsp;ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам&nbsp;все расскажем.</p>
-              <address>
-                <a class="contacts__address-link" href="#">г. Санкт-Петербург, ул.&nbsp;Большая&nbsp;Конюшенная,&nbsp;19/8</a>
-                <a class="contacts__phone-link" href="tel:+88002000000">8-800-200-00-00</a>
-              </address>
-            </div>
+          </div>
+        </section>
+
+        <section class="cards">
+          <div class="container">
+            <h2 class="visually-hidden">Товары и услуги Smart Device</h2>
+            <p>Smart Device предлагает следующие товары и услуги</p>
+            <ul>
+              <li class="сards__item">
+                <a class="" href="#" aria-label="Узнать подробнее">
+                  <h3>Производство печатных плат</h3>
+                  <div class="cards__image-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/content/make-back-mobile@1x.webp 1x,
+                        img/content/make-back-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/make-back-tablet@1x.webp 1x,
+                        img/content/make-back-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/content/make-back-desktop@1x.webp 1x,
+                        img/content/make-back-desktop@2x.webp 2x">
+                      <!-- 1х: 350px; 2x: 700px -->
+                      <img src="img/content/make-back-desktop@1x.png" srcset="img/content/make-back-desktop@2x.png 2x"
+                        alt="Вид печатной платы с конденсаторами и транзисторами" width="350" height="650">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+              <li class="сards__item">
+                <a class="" href="#" aria-label="Узнать подробнее">
+                  <h3>Монтаж печатных плат</h3>
+                  <div class="cards__image-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/content/print-back-mobile@1x.webp 1x,
+                        img/content/print-back-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/print-back-tablet@1x.webp 1x,
+                        img/content/print-back-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/content/print-back-desktop@1x.webp 1x,
+                        img/content/print-back-desktop@2x.webp 2x">
+                      <!-- 1х: 350px; 2x: 700px -->
+                      <img src="img/content/print-back-desktop@1x.png" srcset="img/content/print-back-desktop@2x.png 2x"
+                        alt="Вид печатной платы со слотом для процессора" width="350" height="650">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+              <li class="сards__item">
+                <a class="" href="#" aria-label="Узнать подробнее">
+                  <h3>Комплектующие для светотехники</h3>
+                  <div class="cards__image-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/content/add-back-mobile@1x.webp 1x,
+                        img/content/add-back-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/add-back-tablet@1x.webp 1x,
+                        img/content/add-back-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/content/add-back-desktop@1x.webp 1x,
+                        img/content/add-back-desktop@2x.webp 2x">
+                      <!-- 1х: 350px; 2x: 700px -->
+                      <img src="img/content/add-back-desktop@1x.png" srcset="img/content/add-back-desktop@2x.png 2x"
+                        alt="Вид печатной платы с конденсаторами" width="350" height="650">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="form-block">
+          <div class="form-block__container container">
+            <article>
+              <h2>Остались вопросы? Задайте их нам!</h2>
+              <p>Мы проконсультируем Вас бесплатно</p>
+            </article>
+            <form class="form-block__form form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="form__group form__group--50w">
+                <input type="text" name="name" id="user-name" placeholder="Имя" required>
+                <label class="visually-hidden" for="user-name">Имя</label>
+              </div>
+              <div class="form__group form__group--50w">
+                <input type="tel" name="phone" id="user-phone" placeholder="Телефон"
+                  minlength="11" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+                <label class="visually-hidden" for="user-phone">Телефон</label>
+              </div>
+              <div class="form__group form__group--100w">
+                <label class="visually-hidden" for="user-message">Ваш вопрос</label>
+                <textarea name="user-message" id="user-message"
+                  placeholder="Ваш вопро" rows="5"></textarea>
+              </div>
+              <div class="form__group form__group--footer">
+                <button class="btn" type="submit">Задать вопрос</button>
+                <div class="form__checkbox-wrapper">
+                  <label for="personal-data">
+                    <input class="visually-hidden" type="checkbox" name="consent-personal-data" id="personal-data"
+                    required checked>
+                    <span></span>
+                    Я согласен на обработку персональных данных
+                  </label>
+                </div>
+              </div>
+            </form>
           </div>
         </section>
       </main>
       <footer class="page-footer">
         <div class="page-footer__container container">
-          <a class="page-footer__logo" aria-label="Главная страница Круизов в Антарктику">
-            <svg aria-hidden="true" focusable="false" role="img" width="70" height="38">
-              <use xlink:href="img/sprite_auto.svg#logo"></use>
-            </svg>
-          </a>
-          <ul class="page-footer__nav-list">
-            <li>
-              <a href="#advantages" data-anchor="1">Преимущества</a>
-            </li>
-            <li>
-              <a href="#cruises" data-anchor="1">Направления</a>
-            </li>
-            <li>
-              <a href="#cruises" data-anchor="1">Ближайшие круизы</a>
-            </li>
-            <li>
-              <a href="#contacts" data-anchor="1">Контакты</a>
-            </li>
-          </ul>
-          <ul class="page-footer__social social">
-            <li>
-              <a href="#" aria-label="Круизы в Антарктику в Фейсбук">
-                <img src="img/svg/icon-facebook.svg" width="11" height="20" alt="Иконка Фейсбука">
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="Круизы в Антарктику в Инстаграмм">
-                <img src="img/svg/icon-insta.svg" width="20" height="20" alt="Иконка Инстаграмма">
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="Круизы в Антарктику в Твиттере">
-                <img src="img/svg/icon-twitter.svg" width="20" height="16" alt="Иконка Твиттера">
-              </a>
-            </li>
-          </ul>
+          <div class="page-footer__wrapper">
+          <img srcset="img/content/logo-desktop.svg 215w, img/content/logo-mobile.svg 35w"
+            sizes="(min-width: 768px) 215w, (max-width: 767px) 35w" src="img/content/logo-desktop.svg"
+            width="215" height="55" alt="Логотип Smart Device">
+            <ul class="page-footer__social social">
+              <li>
+                <a href="#" aria-label="Smart Device в Фейсбук">
+                  <img src="img/svg/icon-fb.svg" width="30" height="30" alt="Иконка Фейсбука">
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="Smart Device в Одноклассниках">
+                  <img src="img/svg/icon-ok.svg" width="30" height="30" alt="Иконка Одноклассников">
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="Smart Device в ВКонтакте">
+                  <img src="img/svg/icon-vk.svg" width="30" height="30" alt="Иконка ВКонтакте">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__accordeon accordeon">
+            <section class="accordeon__links">
+              <h4>Разделы сайта</h4>
+              <ul class="page-footer__nav-list">
+                <li>
+                  <a href="#">О Компаниии</a>
+                </li>
+                <li>
+                  <a href="#">Продукты</a>
+                </li>
+                <li>
+                  <a href="#">Протзводство печатных плат</a>
+                </li>
+                <li>
+                  <a href="#">Монтаж печатных плат</a>
+                </li>
+                <li>
+                  <a href="#">Комплектующие</a>
+                </li>
+                <li>
+                  <a href="#">Доставка</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </section>
+            <section class="accordeon__contacts contacts">
+              <h4>Наш офис</h4>
+              <address>
+                <a href="#">г. Мытищи, Олимпийский проспект, д.10</a>
+                <a href="tel:+84955894050">+7 (495) 589-40-50</a>
+                <a href="tel:+89253895829">+7 (925) 389-58-29</a>
+                <a href="tel:+89253647813">+7 (925) 364-78-13</a>
+              </address>
+            </section>
+          </div>
         </div>
       </footer>
+    </div>
+    <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <h3>Закажите звонок</h3>
+          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <form class="form-block__form form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="form__group form__group--50w">
+              <input type="text" name="name" id="user-name-callback" placeholder="Имя" required>
+              <label class="visually-hidden" for="user-name-callback">Имя</label>
+            </div>
+            <div class="form__group form__group--50w">
+              <input type="tel" name="phone" id="user-phone-callback" placeholder="Телефон"
+                minlength="11" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+              <label class="visually-hidden" for="user-phone-callback">Телефон</label>
+            </div>
+            <div class="form__group form__group--100w">
+              <label class="visually-hidden" for="user-message-callback">Ваш вопрос</label>
+              <textarea name="user-message" id="user-message-callback"
+                placeholder="Ваш вопро" rows="5"></textarea>
+            </div>
+            <div class="form__group form__group--footer-modal">
+              <button class="btn" type="submit">Отправить</button>
+              <div class="form__checkbox-wrapper">
+                <label for="personal-data-callback">
+                  <input class="visually-hidden" type="checkbox" name="consent-personal-data" id="personal-data-callback"
+                    required checked>
+                  <span></span>
+                  Я согласен на обработку персональных данных
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
